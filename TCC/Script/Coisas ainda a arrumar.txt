@@ -1,0 +1,1 @@
+Toda vez que cumpre alguma tarefa, conta, habito ou diaria, a pagina atualiza e volta pra tarefas, seria legal se voltasse para a aba que a pessoa esta (habito, tarefa, diaria ou conta) e não somente na tarefa toda a vez

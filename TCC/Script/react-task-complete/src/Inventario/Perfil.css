@@ -1,0 +1,139 @@
+.container-perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.perfil-titulo {
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.perfil-info p {
+    margin-bottom: 20px;
+}
+
+.perfil-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.perfil-info form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+.perfil-info form span {
+    /* background-color: red; */
+    padding-top: 10px;
+}
+
+.perfil-info form span label {
+    margin-right: 5px;
+    font-size: 20px;
+    /* background-color: aqua; */
+    /* border-radius: 10px; */
+}
+
+.perfil-info form span input {
+    background-color: rgb(189, 240, 240);
+    margin: 0 0.6rem 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 20px;
+    width: 400px;
+}
+
+.nome-form, .email-form {
+    display: flex;
+}
+
+.fa-edit-nome, .fa-edit-email {
+    /* display: none; */
+    color: black; 
+    cursor: pointer;
+}
+
+.concluir-edicao-nome, .concluir-edicao-email {
+    display: none;
+    color: green; 
+    cursor: pointer;
+}
+
+
+/*** Informações perfil ***/
+
+/* .perfil-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+/*** Personagem ***/
+
+.personagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.personagem p {
+    margin-bottom: 20px;
+}
+
+.texto-personagem {
+    text-decoration: underline;
+    font-size: 20px;
+    cursor: pointer;
+    color: #000000;
+    font-weight: bolder;
+}
+
+:link {
+    text-decoration: underline;
+    font-size: 20px;
+    cursor: pointer;
+    color: #000000;
+}
+
+.img-perfil {
+    height: 100%;
+    width: 50%;
+}
+
+/*** Nível ***/
+
+.nivel-perfil {
+    display: flex;
+    font-size: 30px;
+}
+
+.barra-nivel {
+    width: 500px;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: #eeeeee;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.barra-nivel div { 
+    height: 100%;
+    border-radius: 10px;
+    background-color: #222;
+    width: 0%;
+}

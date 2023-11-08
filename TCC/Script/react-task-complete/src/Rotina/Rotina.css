@@ -1,0 +1,27 @@
+.opcoes-rotina {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.btn-rotina {
+    font-size: 30px;
+    box-sizing: border-box;
+    padding: 25px 35px;
+    background-color: #6bcafd;
+    border: 1px solid #6bcafd;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    transition: 0.35s;
+    outline: 0;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.btn-rotina:hover {
+    background-color: white;
+    color: #6bcafd;
+}

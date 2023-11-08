@@ -1,0 +1,246 @@
+{
+  "usuarioLogado": [
+    {
+      "id": 1,
+      "nome": "Pedro",
+      "email": "darknighmare1@gmail.com",
+      "senha": "teste",
+      "dinheiro": "917",
+      "nivel": 4,
+      "xp": 40
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Pedro",
+      "email": "darknighmare1@gmail.com",
+      "senha": "teste",
+      "dinheiro": "917",
+      "nivel": 4,
+      "xp": 40
+    },
+    {
+      "id": 2,
+      "nome": "Joao",
+      "email": "joao@gmail.com",
+      "senha": "123",
+      "dinheiro": "173.5",
+      "nivel": 1,
+      "xp": 35
+    },
+    {
+      "id": 3,
+      "nome": "Testeet",
+      "email": "testeet@gmail.com",
+      "senha": "testee",
+      "dinheiro": "105.5",
+      "nivel": 1,
+      "xp": 5
+    },
+    {
+      "nome": "testo",
+      "senha": "321",
+      "email": "testo@gmail.com",
+      "dinheiro": "5",
+      "nivel": 1,
+      "xp": 5,
+      "id": 4
+    },
+    {
+      "nome": "oi",
+      "senha": "123",
+      "email": "oi@gmail.com",
+      "dinheiro": "0",
+      "nivel": 1,
+      "xp": 0,
+      "id": 5
+    }
+  ],
+  "loja": [
+    {
+      "id": 1,
+      "nome": "Cabelo 1",
+      "preco": "6,90",
+      "img": "https://i.imgur.com/sHllgOM.png",
+      "imgPersonagem": "https://i.imgur.com/sHllgOM.png"
+    },
+    {
+      "id": 2,
+      "nome": "Cabelo 2",
+      "preco": "13,90",
+      "img": "https://i.imgur.com/yHRF0JH.png",
+      "imgPersonagem": "https://i.imgur.com/sHllgOM.png"
+    },
+    {
+      "id": 3,
+      "nome": "Cabelo 3",
+      "preco": "8,50",
+      "img": "https://i.imgur.com/weG7Lpm.png",
+      "imgPersonagem": "https://i.imgur.com/sHllgOM.png"
+    },
+    {
+      "id": 4,
+      "nome": "Calça 1",
+      "preco": "49,90",
+      "img": "https://i.imgur.com/OVxM9uP.png",
+      "imgPersonagem": "https://i.imgur.com/sHllgOM.png"
+    },
+    {
+      "id": 5,
+      "nome": "Calça 2",
+      "preco": "89,90",
+      "img": "https://i.imgur.com/bmtquGk.png",
+      "imgPersonagem": "https://i.imgur.com/sHllgOM.png"
+    },
+    {
+      "id": 6,
+      "nome": "Calça 3",
+      "preco": "119,90",
+      "img": "https://i.imgur.com/VyauXXP.png",
+      "imgPersonagem": "https://i.imgur.com/sHllgOM.png"
+    },
+    {
+      "id": 8,
+      "nome": "Camisa 2",
+      "preco": "27,90",
+      "img": "https://i.imgur.com/d0Szw4z.png",
+      "imgPersonagem": "https://i.imgur.com/sHllgOM.png"
+    }
+  ],
+  "inventario": [
+    {
+      "id": 1,
+      "nome": "Cabelo 1",
+      "preco": "6,90",
+      "img": "https://i.imgur.com/sHllgOM.png",
+      "imgPersonagem": "https://i.imgur.com/sHllgOM.png",
+      "equipado": true
+    },
+    {
+      "id": 2,
+      "nome": "Cabelo 2",
+      "preco": "13,90",
+      "img": "https://i.imgur.com/yHRF0JH.png",
+      "imgPersonagem": "https://i.imgur.com/sHllgOM.png",
+      "equipado": false
+    },
+    {
+      "id": 6,
+      "nome": "Calça 3",
+      "preco": "119,90",
+      "img": "https://i.imgur.com/VyauXXP.png",
+      "imgPersonagem": "https://i.imgur.com/sHllgOM.png",
+      "equipado": true
+    },
+    {
+      "id": 8,
+      "nome": "Camisa 2",
+      "preco": "27,90",
+      "img": "https://i.imgur.com/d0Szw4z.png",
+      "imgPersonagem": "https://i.imgur.com/sHllgOM.png",
+      "equipado": false
+    },
+    {
+      "id": 10,
+      "nome": "Camisa 4",
+      "preco": "20,00",
+      "img": "https://i.imgur.com/E81SPt9.png",
+      "imgPersonagem": "https://i.imgur.com/sHllgOM.png",
+      "equipado": true
+    },
+    {
+      "id": 9,
+      "nome": "Camisa 3",
+      "preco": "15,00",
+      "img": "https://i.imgur.com/E81SPt9.png",
+      "imgPersonagem": "https://i.imgur.com/sHllgOM.png",
+      "equipado": false
+    }
+  ],
+  "tarefas": [
+    {
+      "text": "Tarefa teste",
+      "day": "08/09",
+      "reminder": true,
+      "id": 9
+    }
+  ],
+  "diarias": [
+    {
+      "id": 1,
+      "text": "Fazer almoço",
+      "complete": true
+    },
+    {
+      "id": 2,
+      "text": "Fazer janta",
+      "complete": true
+    },
+    {
+      "id": 3,
+      "text": "Tomar banho",
+      "complete": true
+    },
+    {
+      "id": 4,
+      "text": "Ir para o trabalho",
+      "complete": true
+    },
+    {
+      "text": "Ir na academia",
+      "complete": true,
+      "id": 5
+    }
+  ],
+  "habitos": [
+    {
+      "id": 2,
+      "text": "Se alongar",
+      "contador": 20
+    },
+    {
+      "id": 3,
+      "text": "Ler um livro",
+      "contador": 13
+    },
+    {
+      "id": 4,
+      "text": "Praticar meditação",
+      "contador": 9
+    },
+    {
+      "text": "Programar",
+      "contador": 14,
+      "id": 5
+    },
+    {
+      "text": "Estudar",
+      "contador": 19,
+      "id": 6
+    }
+  ],
+  "contas": [
+    {
+      "id": 2,
+      "text": "Academia",
+      "day": "08/08/2023",
+      "valor": "70,90",
+      "reminder": false
+    },
+    {
+      "id": 3,
+      "text": "Aluguel",
+      "day": "09/10/2023",
+      "valor": "760,00",
+      "reminder": true
+    },
+    {
+      "text": "Inglês",
+      "day": "05/12/2023",
+      "valor": "500",
+      "reminder": true,
+      "id": 4
+    }
+  ]
+}

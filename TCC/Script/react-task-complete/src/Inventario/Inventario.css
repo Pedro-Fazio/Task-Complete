@@ -1,0 +1,102 @@
+.inventario-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background-color: red; */
+}
+
+/*** Itens adquiridos ***/
+
+.itens-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    background: #6eddff;
+    width: 600px;
+    height: 550px;
+    margin: 20px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.05);
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.titulo-itens-adquiridos {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.item-inventario {
+    display: flex;
+    justify-content: space-between;
+
+    background: #FFF;
+    width: 600px;
+    height: 60px;
+    margin: 5px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.05);
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+.nome-item {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.equipar {
+    font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.equipado {
+    font-weight: bold;
+    background-color: rgb(255, 128, 0);
+    height: 25px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.05);
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/*** Personagem ***/
+
+.img-inventario {
+    height: 100%;
+    width: 90%;
+}
+
+.aplicar-mudancas {
+    /* font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+    color: #000000;
+    background-color: orange;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.05);
+    box-sizing: border-box;
+    border-radius: 5px; */
+    box-sizing: border-box;
+    padding: 10px 15px;
+    font-size: 30px;
+    background-color: #FF8C00;
+    border: 1px solid #FF8C00;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    transition: 0.35s;
+    outline: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.aplicar-mudancas:hover {
+    background-color: white;
+    color: #FF8C00;
+}

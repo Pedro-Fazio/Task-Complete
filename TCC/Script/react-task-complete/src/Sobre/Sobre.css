@@ -1,0 +1,96 @@
+/*** Informações background ***/
+
+.img-sobre {
+    height: 50em;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.background-sobre {
+    position: relative;
+    display: inline-block;
+}
+
+.texto-background {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.info-sobre {
+    /* background-color: #F8EEEE; */
+    background-color: #FEF5F5;
+}
+
+
+/*** Informações projeto graduação ***/
+
+.container-proj-grad {
+    /* font-family: Rationale; */
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.titulo-proj-grad {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.texto-proj-grad {
+    font-size: 30px;
+    text-align: justify;
+    /* font-weight: bold; */
+}
+
+
+/*** Informações extras ***/
+
+.infos-extras {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+}
+
+.texto-infos-extras {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* background-color: red; */
+
+    width: 530px;
+    margin: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    /* box-shadow: 0px 0px 20px rgba(0,0,0,0.05); */
+}
+
+.prefixo-nome {
+    font-size: 30px;
+    align-items: center;
+}
+
+.nome {
+    font-size: 30px;
+}
+
+.logotipo-sobre {
+    width: 300px;
+    margin: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}

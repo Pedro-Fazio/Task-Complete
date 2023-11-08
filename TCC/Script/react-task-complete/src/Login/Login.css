@@ -1,0 +1,49 @@
+.login-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 80px;
+}
+
+.login-wrapper form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-entrar, .login-cadastro {
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 10px 35px;
+    background-color: #288bc1;
+    border: 1px solid #288bc1;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    transition: 0.35s;
+    outline: 0;
+    margin-top: 20px;
+}
+
+.login-entrar:hover, .login-cadastro:hover {
+    background-color: white;
+    color: #288bc1;
+}
+
+.login-nome-caixa, .login-senha-caixa, .login-nome, .login-senha {
+    font-size: 20px;
+}
+
+.login-titulo {
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: #288bc1;
+}
+
+.button-login {
+    display: flex;
+    flex-direction: column;
+}

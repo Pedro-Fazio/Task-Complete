@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Oioi",
+      "day": "01/01/2001",
+      "reminder": true
+    },
+    {
+      "id": 2,
+      "text": "heyhey",
+      "day": "02/02/2002",
+      "reminder": true
+    },
+    {
+      "id": 3,
+      "text": "tchauchau",
+      "day": "03/03/2003",
+      "reminder": false
+    }
+  ]
+}

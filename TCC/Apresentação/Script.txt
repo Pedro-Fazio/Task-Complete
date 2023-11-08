@@ -1,0 +1,262 @@
+============================================================================================
+
+Slide 1 - Capa 
+
+============================================================================================
+
+Slide 2 - Ideia do projeto
+
+============================================================================================
+
+Slide 3 - Ideias discutidas
+
+============================================================================================
+
+Slide 4 - Pesquisas Realizadas
+
+============================================================================================
+
+Slide 5 - Tópico das pesquisas
+
+
+- Utilização das cores
+As cores desempenham um papel fundamental na criação de um site impactante e atraente. Elas têm o poder de transmitir emoções, estabelecer uma identidade visual, melhorar a usabilidade e destacar elementos importantes. Aqui estão algumas razões que destacam a importância das cores em um site:
+
+Atração visual: As cores são elementos visuais poderosos que chamam a atenção dos usuários. Uma paleta de cores atraente e harmoniosa pode despertar o interesse e a curiosidade dos visitantes, incentivando-os a explorar o site e interagir com o conteúdo.
+
+Comunicação de marca: As cores desempenham um papel fundamental na identidade visual de uma marca. Elas ajudam a criar uma imagem distinta e reconhecível, transmitindo os valores, personalidade e estilo da marca. As cores podem evocar sentimentos e associações que influenciam a percepção do público em relação à marca.
+
+Usabilidade e legibilidade: As cores também desempenham um papel importante na usabilidade e legibilidade de um site. É essencial escolher combinações de cores que garantam um bom contraste entre o texto e o fundo, garantindo que o conteúdo seja facilmente legível. Além disso, o uso adequado das cores pode destacar elementos interativos, como botões e links, melhorando a experiência do usuário.
+
+Transmissão de emoções e mensagens: Cada cor possui associações emocionais e psicológicas específicas. Por exemplo, o vermelho pode transmitir energia e paixão, enquanto o azul transmite tranquilidade e confiança. Ao selecionar as cores certas, você pode criar a atmosfera desejada e transmitir mensagens específicas aos usuários, evocando emoções adequadas ao propósito do site.
+
+Diferenciação e identificação: As cores podem ajudar a diferenciar seu site da concorrência. Ao escolher uma paleta de cores única e memorável, você pode criar uma identidade visual distintiva que torna seu site mais reconhecível e memorável para os usuários.
+
+Acessibilidade: As cores também desempenham um papel crucial na acessibilidade do site. É importante garantir que as cores selecionadas atendam aos critérios de contraste estabelecidos nas diretrizes de acessibilidade, como o WCAG, para garantir que o conteúdo seja legível para todas as pessoas, independentemente de suas habilidades visuais.
+
+Em resumo, as cores têm um impacto significativo na percepção, experiência e interação dos usuários com um site. Ao selecionar cuidadosamente a paleta de cores e aplicá-las de forma consistente, é possível criar uma experiência visual agradável, destacar elementos importantes e transmitir efetivamente a mensagem da marca.
+
+
+
+-Gamificação de jogos
+Embora a gamifica¸c˜ao seja uma abordagem relativamente nova,
+os jogos sempre foram uma fonte de inspira¸c˜ao para a cria¸c˜ao de sistemas de incentivo e motiva¸c˜ao. Desde os jogos de tabuleiro antigos at´e os jogos eletrˆonicos modernos, os jogos sempre foram projetados para serem desafiadores e motivadores, oferecendo recompensas e feedback imediato para manter os jogadores engajados.
+A ideia de gamifica¸c˜ao, como uma t´ecnica para incentivar o engajamento e a motiva¸c˜ao em atividades cotidianas, surgiu no final dos anos 2000, com a populariza¸c˜ao das m´ıdias sociais e dos aplicativos m´oveis. A gamifica¸c˜ao aplica princ´ıpios e mecˆanicas de jogos em ´areas como educa¸c˜ao, sa´ude, trabalho e marketing, visando tornar atividades cotidianas mais interessantes e motivadoras.
+A gamifica¸c˜ao ´e inspirada pela hist´oria dos jogos, incorporando elementos como recompensas, desafios, pontua¸c˜oes e feedback imediato em atividades n˜ao l´udicas. Por exemplo, um aplicativo de exerc´ıcios pode oferecer recompensas por completar determinadas metas, ou um programa de treinamento empresarial pode usar jogos para ensinar habilidades de lideran¸ca e colabora¸c˜ao.
+
+
+
+- Acessibilidade na tecnologia
+Aprofundando nas quest˜oes de acessibilidade, esse ´e um termo que se refere `a capacidade das pessoas, independentemente de suas habilidades ou limita¸c˜oes, terem acesso igualit´ario e sem barreiras a todos os recursos, servi¸cos e espa¸cos da sociedade. Isso inclui o acesso a produtos, tecnologias, edif´ıcios, informa¸c˜oes, transporte, comunica¸c˜ao e outros aspectos da vida cotidiana. Mais especificamente na tecnologia, ela ´e considerada a inclus˜ao de pessoas com deficiˆencia ou limita¸c˜oes para que elas tenham acesso aos recursos e servi¸cos de tecnologia, bem como us´a-los de maneira efetiva. Isso inclui o acesso a computadores, dispositivos m´oveis, software e aplicativos, entre outros. E importante essa inclus˜ao porque muitas pessoas com deficiˆencia ´ ou limita¸c˜oes dependem de tecnologias assistivas para realizar tarefas cotidianas, trabalhar, se comunicar e se envolver em atividades sociais. A acessibilidade na tecnologia pode incluir recursos como
+leitores de tela, teclados especiais, interfaces de usu´ario personaliz´aveis, legendas e outras tecnologias que tornam as informa¸c˜oes e os servi¸cos digitais mais acess´ıveis. Por fim, a acessibilidade tamb´em pode ajudar a promover a inclus˜ao social e a igualdade de oportunidades para pessoas com deficiˆencia ou limita¸c˜oes. A tecnologia pode ajudar a remover barreiras e obst´aculos que podem impedir ou dificultar a participa¸c˜ao plena das pessoas na sociedade. E por isso que muitos governos e orga- ´ niza¸c˜oes internacionais desenvolvem normas e diretrizes para garantir a acessibilidade na tecnologia e incentivam a ado¸c˜ao de pr´aticas
+
+
+
+- Outros diversos
+Flat Icon, Figma, Imgur,
+
+
+============================================================================================
+
+Slide 6 - Teste de gamificação em escolas do brasil
+
+
+*Conversar com a professora*
+
+============================================================================================
+
+Slide 7 - Teste de gamificação em escolas do brasil (topicos)
+
+A gamifica¸c˜ao pode ser aplicada em v´arias ´areas diferentes, inclusive na educa¸c˜ao, desde a educa¸c˜ao infantil at´e o ensino superior, e em diversas disciplinas, como matem´atica, ciˆencias, l´ınguas e hist´oria. Um exemplo ´e um experimento chamado “Ensino e educa¸c˜ao: uso da gamifica¸c˜ao na matem´atica”, que foi divulgado pela Revista Cientifica Multidisciplinar Nucleo do Conhecimento pelo autor Adriano Carlos Moraes Rosa. A imagem a seguir ilustra
+os resultados obtidos pela pesquisa.
+
+
+Partindo do método colaborativo, foi aplicada uma técnica de Gamificação em uma turma de 5º ano, na Escola Municipal de Educação Integral “Dr. Guilherme Eugênio Filippo Fernandes, em uma cidade no interior do estado de São Paulo, onde um dos autores deste artigo está vinculada, para que assim, a ideia além da análise teórica, tivesse o caráter aplicado, surgindo então, comparações entre teoria e prática.
+
+Segundo os exemplos apresentados na revisão por Alves (2015) e Mendes (2019), pode-se afirmar que, de forma simplificada, a Gamificação funciona “sim” e pôde ser implementada seguindo os passos:
+
+Compreender um problema e seu contexto – baixo rendimento dos alunos na disciplina de matemática.
+Definir e compreender quais são e como são os jogadores envolvidos – foram identificados o número de alunos na turma, aqueles com maior e menor dificuldade na disciplina.
+Criar e divulgar a esses envolvidos quais serão os critérios norteadores e qual será a missão do jogo – a proposta da aplicação do jogo e as regras foram apresentados aos alunos
+Gerar ideias para o jogo e definir como será a sua mecânica (como funcionará do início ao fim) – Foram definidos os conteúdos que seriam aplicados aos alunos, o número de participantes por grupo e o passo a passo da atividade.
+Testar o jogo considerando a sua fidelidade em relação aos resultados e situações que se esperava simular – o jogo foi aplicado em casa com meus filhos e sobrinhos
+Implementar e monitorar o game (situação de jogo) – com base nas dificuldades encontradas durante o teste, foram feitas implementações
+Mensurar e validar resultados como grau de motivação, engajamento dos participantes e interação com o game – foram estabelecidas pontuações para identificar não apenas os resultados dos exercícios propostos, mas também o envolvimento, engajamento, e interação dos alunos.
+O jogo aconteceu durante o segundo semestre de 2019, e a turma foi dividida em equipes, após isso as regras do jogo, foram explicadas.
+
+Em grupo os alunos deveriam não apenas receber o conteúdo apresentado das matérias, mas principalmente apoiar uns aos outros no processo de aprendizagem para identificarem a utilização dos assuntos no cotidiano respeitando sempre as regras de convivência. Após a aplicação de cada conteúdo, os alunos dos grupos realizaram uma avaliação com o objetivo de identificar se estavam compreendendo os assuntos apresentados.
+
+Para identificar o grupo vencedor do jogo, o professor considera não somente o resultado da avaliação, mas principalmente a integração e envolvimento dos alunos no processo. Aos poucos, os alunos foram se sentindo cada vez mais estimulados a buscarem melhores resultados e isso gerou muita ajuda entre os membros das equipes.
+
+Inicialmente esse método causou certo espanto nos alunos, pois estavam acostumados a sentar enfileirados resolvendo problemas individualmente.
+
+O professor foi uma ferramenta essencial no processo educacional e deve sempre estimular e impulsionar a mudança. Durante a aplicação deste trabalho foi possível identificar que uma simples ação de desafiar os alunos para um jogo em equipe foi importante, pois ele possibilitou maior compreensão do conteúdo e a percepção da diferença que se pode fazer na vida do colega de forma positiva.
+
+A seguir, nas Figuras 1 e 2 vê-se alguns dados comparativos que demonstram os resultados das avaliações aplicadas antes e depois da gamificação:
+
+============================================================================================
+
+Slide 8 - Grafico alunos participantes
+
+============================================================================================
+
+Slide 9 - Grafico alunso não participantes
+
+============================================================================================
+
+Slide 10 - Jogos analisados
+
+============================================================================================
+
+Slide 11 - Principais jogos analisados
+
+- Uno
+
+O Uno é um popular jogo de cartas de estilo familiar que foi lançado pela primeira vez em 1971. O jogo foi projetado para ser jogado por duas ou mais pessoas e usa um baralho especial de cartas. O objetivo do Uno é se livrar de todas as cartas da sua mão antes dos outros jogadores.
+
+- Habitica
+O Habitica é uma plataforma de gamificação voltada para o desenvolvimento pessoal e organização de tarefas. É uma combinação de um aplicativo de produtividade e um jogo de RPG (Role-Playing Game). O objetivo do Habitica é transformar a realização de tarefas diárias e o desenvolvimento de hábitos em uma experiência divertida e motivadora.
+
+No Habitica, os usuários criam um personagem virtual que avança e ganha recompensas à medida que completam tarefas, estabelecem hábitos positivos e alcançam metas pessoais. A plataforma incentiva os usuários a definirem objetivos, estabelecerem rotinas saudáveis e acompanharem seu progresso.
+
+Os principais recursos do Habitica incluem:
+
+Listas de Tarefas: Os usuários podem criar e gerenciar listas de tarefas diárias, tarefas únicas e tarefas recorrentes.
+
+Hábitos: Os usuários podem acompanhar e desenvolver hábitos positivos, ganhando recompensas ao realizar ações benéficas ou sofrendo penalidades ao realizar ações indesejadas.
+
+Recompensas e Avanço: À medida que os usuários concluem tarefas e desenvolvem bons hábitos, eles ganham recompensas virtuais, como moedas, itens e experiência, que podem ser usados para melhorar seus personagens e desbloquear recursos adicionais.
+
+Socialização e Desafios em Grupo: Os usuários podem formar grupos, desafiar amigos e interagir com outros membros da comunidade para obter suporte e motivação mútua.
+
+O Habitica está disponível como um aplicativo para dispositivos móveis (Android e iOS) e também pode ser acessado via web. A plataforma é gratuita, mas oferece recursos adicionais através de uma assinatura paga chamada "Habitica Subscription".
+
+O objetivo principal do Habitica é ajudar os usuários a aumentar sua produtividade, desenvolver hábitos positivos e alcançar seus objetivos de uma maneira divertida e interativa. É uma ferramenta popular para aqueles que desejam melhorar sua organização pessoal, criar rotinas saudáveis e aproveitar a motivação fornecida pela gamificação.
+
+============================================================================================
+
+Slide 12 - Uno versão para daltonicos
+
+O Uno, jogo de cartas que é praticado a partir da combinação de cores e números de suas cartas, ganhou uma versão dedicada às pessoas daltônicas, com cartas marcadas com o selo iconográfico do código de cores universal para daltônicos, ou ColorADD.
+
+O sinal pode ser visto próximo aos números das cartas. As cores vermelho, azul e amarelo possuem cada qual um símbolo diferente, que misturados, representam uma nova cor. Ou seja, a partir da combinação entre o traço do cartão amarelo e o triângulo do azul, temos um símbolo formado pela junção dos dois no cartão da cor verde, por exemplo. Ou seja, as cores não são apenas rotuladas pelos sinais, mas também recriadas por meio de suas combinações (o ícone do verde sendo igual a uma junção dos ícones do amarelo e do azul), o que ajuda uma pessoa daltônica a guardar qual cor é qual.
+
+A Mattel, empresa detentora dos direitos do produto, aposta na inclusão como um dos principais conceitos do jogo, que possui um design facilmente reconhecido e preços acessíveis no mercado. Não é à toa que é o jogo de cartas preferido em todo o mundo, além de ser o quarto brinquedo mais popular entre os demais. Faltava resolver o problema das cores para que uma de suas palavras-chaves mais centrais fizesse jus à marca.
+
+Antes da solução, a Mattel pensou em mudar as cores das cartas, mas os designers se viram diante de outras combinações de cores que também causam problemas para algumas pessoas, como as cores amarelo e azul, indistinguíveis em casos raros de daltonismo, mas que existem. Logo, a solução foi manter as cores que possuem a maior porcentagem de daltônicos, e agora serão contempladas com uma versão especialmente feita para elas.
+
+============================================================================================
+
+Slide 13 - Habitica
+
+Mostrar o habitica na página
+
+============================================================================================
+
+Slide 14 - Mock up
+
+============================================================================================
+
+Slide 15 - Etapa de design
+
+*Objetivo do prototipo* 
+
+Foi definido claramente o objetivo do prot´otipo, assim ajudando a determinar quais intera¸c˜oes e funcionalidades devem ser inclu´ıdas, bem como o n´ıvel de detalhe necess´ario no design;
+
+Objetivos: 
+- Validar conceitos e ideias
+
+- Identificar possíveis problemas
+
+- Economizar tempo e recursos
+
+
+
+*Ferramentas utilizadas*
+
+Como ferramenta de desenvolvimento do Mock Up foi utilizado o
+Figma, que ´e um editor gr´afico de prototipagem e Photoshop CS6,
+que ´e um editor de imagens.
+Em rela¸c˜ao aos recursos usados para a cria¸c˜ao dessas p´aginas:
+Todas as imagens e derivados para a prototipa¸c˜ao foram retiradas
+do site https://www.pexels.com/pt-br/, e todos os ´ıcones .svg foram
+retirados do site https://www.flaticon.com/. Tamb´em foram utilizadas algumas imagens pessoais, sendo algumas criadas inteiramente
+no photoshop especialmente para ser utilizada no Task Complete.
+
+
+
+*Público alvo*
+
+Pessoas com dificuldade intelectual: 
+Pessoas com dificuldade intelectual s˜ao indiv´ıduos que apresentam limita¸c˜oes no funcionamento intelectual e nas habilidades adaptativas. Essas limita¸c˜oes podem afetar o seu aprendizado, comunica¸c˜ao, compreens˜ao de conceitos complexos, habilidades sociais
+e o desempenho de atividades di´arias, atrapalhando por sua vez tamb´em a sua rotina.
+E importante compreender que a dificuldade intelectual n˜ao de- ´fine a totalidade da pessoa. Cada indiv´ıduo possui suas pr´oprias capacidades, talentos e potenciais, independentemente de suas limita¸c˜oes intelectuais. E essencial valorizar e respeitar a singulari- ´ dade de cada pessoa com dificuldade intelectual, reconhecendo suas habilidades e oferecendo oportunidades para o seu pleno desenvolvimento.
+Pessoas com dificuldade intelectual podem enfrentar desafios em diferentes aspectos da vida, como a educa¸c˜ao, o emprego, a inde27 pendˆencia e as rela¸c˜oes sociais. No entanto, com o suporte adequado, elas tˆem a capacidade de aprender, crescer e se envolver ativamente na sociedade.
+A inclus˜ao e a acessibilidade s˜ao fundamentais para garantir a participa¸c˜ao plena das pessoas com dificuldade intelectual na comunidade. Isso envolve a remo¸c˜ao de barreiras f´ısicas, a adapta¸c˜ao de materiais de aprendizagem e a cria¸c˜ao de ambientes inclusivos
+que promovam a igualdade de oportunidades. Bem como garantir a inclus˜ao dessas pessoas a acesso a tecnologias assistivas e jogos interativos que podem auxiliar em suas atividades rotineiras, de estudo, entre outras atividades.
+Finalmente, ´e importante promover a conscientiza¸c˜ao e a compreens˜ao sobre a dificuldade intelectual, desmistificando estere´otipos e preconceitos. Ao oferecer um ambiente acolhedor e apoio adequado, podemos criar oportunidades para que essas pessoas desenvolvam suas habilidades, alcancem suas metas e se tornem membros ativos e valorizados da sociedade
+
+
+*Consistencia visual*
+
+A consistência visual é um princípio importante no design e na criação de interfaces de usuário. Ela se refere à aplicação coerente de elementos visuais, como cores, tipografia, ícones, layout e estilo, em todo o projeto, a fim de fornecer uma experiência unificada e intuitiva para os usuários. A consistência visual tem o objetivo de criar uma identidade visual reconhecível e facilitar a compreensão e interação do usuário com o produto ou serviço.
+
+Ajuda em:
+
+- Facilita a compreensão
+
+- Reduz a curva de aprendizado
+
+- Estetica e apelo visual
+
+============================================================================================
+
+Slide 16 - Principais areas das paginas
+
+Mostrar o figma
+
+============================================================================================
+
+Slide 17 - Criação da aplicação
+
+
+============================================================================================
+
+Slide 18 - Etapa de desenvolvimento
+
+- Desenvolvimento incremental
+O desenvolvimento incremental é uma abordagem de desenvolvimento de software em que um sistema ou produto é construído e aprimorado gradualmente, em etapas incrementais. Em vez de tentar entregar um produto final completo em uma única versão, o desenvolvimento incremental divide o projeto em partes menores e entregáveis, que são desenvolvidas e implantadas em iterações sucessivas.
+
+Na abordagem incremental, cada iteração, também chamada de incremento, adiciona funcionalidades, recursos ou melhorias ao sistema existente. Cada incremento é planejado, desenvolvido, testado e implantado de forma independente, geralmente com um cronograma curto e metas bem definidas. Cada incremento aumenta o valor e a funcionalidade do produto, e o ciclo se repete até que o sistema atenda a todos os requisitos e esteja completo.
+
+- Projeto Web
+
+
+
+- Front End React.js
+
+
+- Back End Json-Server
+
+============================================================================================
+
+Slide 19 - Código da aplicação
+
+Mostrar o código
+
+============================================================================================
+
+Slide 20 - Task Complete
+
+Mostrar o site rodando
+
+============================================================================================
+
+Slide 21 - Features com pendencias a serem resolvidas
+
+============================================================================================
+
+Slide 22 - Obrigado
+
+============================================================================================
+
