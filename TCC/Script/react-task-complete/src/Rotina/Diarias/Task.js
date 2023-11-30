@@ -23,7 +23,7 @@ const Task = ({ task, onDelete, onComplete }) => {
           color='grey'
         />}
       
-        {task.text}{' '}
+        {task.texto}{' '}
         <FaTimes className="check-delete-task"
           onClick={() => onDelete(task.id)}
           size={35}

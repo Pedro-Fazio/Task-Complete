@@ -3,6 +3,7 @@ import { FaTimes } from 'react-icons/fa'
 import { useState, useEffect } from 'react'
 import LojaCards from './LojaCards'
 import './Loja.css';
+import axios from 'axios';
 
 const Loja = ({ }) => {
     const [itens, setItens] = useState([])
@@ -23,16 +24,16 @@ const Loja = ({ }) => {
         getItens()
     }, [])
 
+
     const fetchItens = async () => {
-        const res = await fetch('http://localhost:5000/loja')
+        const res = await fetch('http://localhost:8080/loja')
         const data = await res.json()
 
-        // console.log(`Data: ${data[0]}`);
         return data
     }
 
     const fetchItem = async (id) => {
-        const res = await fetch(`http://localhost:5000/loja/${id}`)
+        const res = await fetch(`http://localhost:8080/loja/${id}`)
         const data = await res.json()
 
         return data
@@ -61,9 +62,16 @@ const Loja = ({ }) => {
 
     const adicionarInventario = async (id) => {
         const item = await fetchItem(id);
+
+        console.log("é multiplayer antes", item)
+
+        //const { id, ...restoDoItem } = item;
+        delete item.id;
         const updItem = { ...item, equipado: false }
 
-        const res = await fetch('http://localhost:5000/inventario', {
+        console.log("é multiplayer", updItem)
+
+        const res = await fetch('http://localhost:8080/inventario', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json',
@@ -109,11 +117,11 @@ const Loja = ({ }) => {
         const data = await res.json()
 
         //console.log("DINHEIRO: ", JSON.stringify(data))
-        removerItemLoja(id);
+        //removerItemLoja(id);
     }
 
     const removerItemLoja = async (id) => {
-            const res = await fetch(`http://localhost:5000/loja/${id}`, {
+            const res = await fetch(`http://localhost:8080/loja/${id}`, {
                 method: 'DELETE',
             })
     
@@ -135,7 +143,7 @@ const Loja = ({ }) => {
 
         adicionarInventario(id);
         diminuirDinheiro(id);
-        //removerItemLoja(id);
+        removerItemLoja(id);
 
         setTimeout(function () {
             window.location.reload();

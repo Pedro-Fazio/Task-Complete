@@ -3,6 +3,10 @@ import './Inventario.css';
 import { useState, useEffect } from 'react'
 
 const InventarioItem = ({ equiparItem, item }) => {
+    useEffect(() => {
+        console.log("item: ", item)
+    }, []);
+
     return (
         <div className="item-inventario">
             <p className="nome-item"> {item.nome} </p>

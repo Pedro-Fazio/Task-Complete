@@ -20,21 +20,21 @@ const Tarefa = ({ completarTarefa }) => {
     }, [])
 
     const fetchTasks = async () => {
-        const res = await fetch('http://localhost:5000/tarefas')
+        const res = await fetch('http://localhost:8080/tarefas')
         const data = await res.json()
 
         return data
     }
 
     const fetchTask = async (id) => {
-        const res = await fetch(`http://localhost:5000/tarefas/${id}`)
+        const res = await fetch(`http://localhost:8080/tarefas/${id}`)
         const data = await res.json()
 
         return data
     }
 
     const addTask = async (task) => {
-        const res = await fetch('http://localhost:5000/tarefas', {
+        const res = await fetch('http://localhost:8080/tarefas', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json',
@@ -53,7 +53,7 @@ const Tarefa = ({ completarTarefa }) => {
 
     // Delete Task
     const deleteTask = async (id) => {
-        const res = await fetch(`http://localhost:5000/tarefas/${id}`, {
+        const res = await fetch(`http://localhost:8080/tarefas/${id}`, {
             method: 'DELETE',
         })
 
@@ -75,7 +75,7 @@ const Tarefa = ({ completarTarefa }) => {
         const taskToToggle = await fetchTask(id)
         const updTask = { ...taskToToggle, reminder: !taskToToggle.reminder }
 
-        const res = await fetch(`http://localhost:5000/tarefas/${id}`, {
+        const res = await fetch(`http://localhost:8080/tarefas/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-type': 'application/json',

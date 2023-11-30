@@ -20,21 +20,22 @@ const Habito = ({ completarTarefa }) => {
     }, [])
 
     const fetchHabitos = async () => {
-        const res = await fetch('http://localhost:5000/habitos')
+        //const res = await fetch('http://localhost:5000/habitos')
+        const res = await fetch('http://localhost:8080/habitos')
         const data = await res.json()
 
         return data
     }
 
     const fetchHabito = async (id) => {
-        const res = await fetch(`http://localhost:5000/habitos/${id}`)
+        const res = await fetch(`http://localhost:8080/habitos/${id}`)
         const data = await res.json()
 
         return data
     }
 
     const addHabito = async (habito) => {
-        const res = await fetch('http://localhost:5000/habitos', {
+        const res = await fetch('http://localhost:8080/habitos', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json',
@@ -49,7 +50,7 @@ const Habito = ({ completarTarefa }) => {
 
     // Delete Habito
     const deleteHabito = async (id) => {
-        const res = await fetch(`http://localhost:5000/habitos/${id}`, {
+        const res = await fetch(`http://localhost:8080/habitos/${id}`, {
             method: 'DELETE',
         })
 
@@ -79,7 +80,7 @@ const Habito = ({ completarTarefa }) => {
 
         //console.log(JSON.stringify(updHabito))
 
-        const res = await fetch(`http://localhost:5000/habitos/${id}`, {
+        const res = await fetch(`http://localhost:8080/habitos/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-type': 'application/json',

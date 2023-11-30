@@ -21,21 +21,21 @@ const Diaria = ({ completarTarefa }) => {
     }, [])
 
     const fetchDiarias = async () => {
-        const res = await fetch('http://localhost:5000/diarias')
+        const res = await fetch('http://localhost:8080/diarias')
         const data = await res.json()
 
         return data
     }
 
     const fetchDiaria = async (id) => {
-        const res = await fetch(`http://localhost:5000/diarias/${id}`)
+        const res = await fetch(`http://localhost:8080/diarias/${id}`)
         const data = await res.json()
 
         return data
     }
 
     const addDiaria = async (diaria) => {
-        const res = await fetch('http://localhost:5000/diarias', {
+        const res = await fetch('http://localhost:8080/diarias', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json',
@@ -54,7 +54,7 @@ const Diaria = ({ completarTarefa }) => {
 
     // Delete Diaria
     const deleteDiaria = async (id) => {
-        const res = await fetch(`http://localhost:5000/diarias/${id}`, {
+        const res = await fetch(`http://localhost:8080/diarias/${id}`, {
             method: 'DELETE',
         })
 
@@ -69,7 +69,7 @@ const Diaria = ({ completarTarefa }) => {
         const diariaToComplete = await fetchDiaria(id)
         const updDiaria = { ...diariaToComplete, complete: !diariaToComplete.complete }
 
-        const res = await fetch(`http://localhost:5000/diarias/${id}`, {
+        const res = await fetch(`http://localhost:8080/diarias/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-type': 'application/json',

@@ -1,18 +1,18 @@
 import { useState } from 'react'
 
 const AddTask = ({ onAdd }) => {
-  const [text, setText] = useState('')
+  const [texto, setText] = useState('')
   const [complete, setComplete] = useState(false)
 
   const onSubmit = (e) => {
     e.preventDefault()
 
-    if (!text) {
+    if (!texto) {
       alert('Por favor adicione uma diária')
       return
     }
 
-    onAdd({ text, complete })
+    onAdd({ texto, complete })
 
     setText('')
     setComplete(false)
@@ -25,7 +25,7 @@ const AddTask = ({ onAdd }) => {
         <input
           type='text'
           placeholder='Nome da Diária'
-          value={text}
+          value={texto}
           onChange={(e) => setText(e.target.value)}
         />
       </div>

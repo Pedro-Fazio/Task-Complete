@@ -7,7 +7,7 @@ const Task = ({ task, onDelete, onToggle }) => {
       onDoubleClick={() => onToggle(task.id)}
     >
       <h3>
-        {task.text}{' '}
+        {task.texto}{' '}
         <AiFillCheckCircle className="check-circle-task"
           onClick={() => onDelete(task.id)}
           size={30}

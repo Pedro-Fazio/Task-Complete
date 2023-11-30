@@ -1,0 +1,14 @@
+No modelo LojaItem, o usuarioEmail não consegue ter a anotação @NotNull e @NotEmpty não funciona porque por algum motivo esse campo ta vindo como vazio
+
+no DetalhesLojaItemDto não esta retornando todos os atributos, ele retorna só os atributos que ja tem no LojaItemDto, e não retorna o usuarioEmail para a função detalhar que esta no LojaItemController
+
+No PUT tem que atualizar o ID do usuario no banco de dados
+
+
+
+
+
+
+
+
+Quando eu compro na loja, e o item vai pro inventario, ele não traz consigo o usuario ID (arrumar isso)

@@ -1,23 +1,23 @@
 import { useState } from 'react'
 
 const AddTask = ({ onAdd }) => {
-  const [text, setText] = useState('')
-  const [day, setDay] = useState('')
+  const [texto, setText] = useState('')
+  const [dia, setDia] = useState('')
   const [reminder, setReminder] = useState(false)
   const [valor, setValor] = useState(0)
 
   const onSubmit = (e) => {
     e.preventDefault()
 
-    if (!text) {
+    if (!texto) {
       alert('Por favor adicione uma tarefa')
       return
     }
 
-    onAdd({ text, day, valor, reminder })
+    onAdd({ texto, dia, valor, reminder })
 
     setText('')
-    setDay('')
+    setDia('')
     setReminder(false)
     setValor(0)
   }
@@ -29,7 +29,7 @@ const AddTask = ({ onAdd }) => {
         <input
           type='text'
           placeholder='Nome da Conta'
-          value={text}
+          value={texto}
           onChange={(e) => setText(e.target.value)}
         />
       </div>
@@ -38,8 +38,8 @@ const AddTask = ({ onAdd }) => {
         <input
           type='text'
           placeholder='DD/MM/AAAA'
-          value={day}
-          onChange={(e) => setDay(e.target.value)}
+          value={dia}
+          onChange={(e) => setDia(e.target.value)}
         />
       </div>
       <div className='form-control'>

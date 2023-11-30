@@ -6,54 +6,65 @@ import InventarioItens from './InventarioItens'
 
 const Inventario = ({ }) => {
   const [itens, setItens] = useState([])
+  const [item, setItem] = useState([])
 
   /*** Requisições ao backend ***/
   useEffect(() => {
     const getItens = async () => {
       const itensFromServer = await fetchItens()
+      console.log('itensFromServer', itensFromServer)
       setItens(itensFromServer)
     }
 
     getItens()
   }, [])
 
-  const fetchItens = async () => {
-    const res = await fetch('http://localhost:5000/inventario')
-    const data = await res.json()
+  useEffect(() => {
+    // Este código será executado após a renderização
+    // e sempre que `variavel` for alterado
+    enviarParaBackend(item, item.id);
+  }, [item]);
 
-    //console.log("data:::: ", JSON.stringify(data))
+  // useEffect(() => {
+  //   setItem({...updItem, equipado: !updItem.equipado})
+  // }, [updItem]);
+
+
+
+  const fetchItens = async () => {
+    const res = await fetch('http://localhost:8080/inventario')
+    const data = await res.json()
 
     return data
   }
 
   const fetchItem = async (id) => {
-    const res = await fetch(`http://localhost:5000/inventario/${id}`)
+    const res = await fetch(`http://localhost:8080/inventario/${id}`)
     const data = await res.json()
 
     return data
 }
 
   const equiparItem = async (id) => {
-    const updItem = await fetchItem(id);
+    let updItem = await fetchItem(id);
+    setItem({...updItem, equipado: !updItem.equipado})
     //mudarStatusEquipado()
-
-    //console.log("updItem: ", updItem);
-
-    updItem.equipado = !updItem.equipado;
-
-    const res = await fetch(`http://localhost:5000/inventario/${id}`, {
-      method: 'PUT',
-      headers: {
-          'Content-type': 'application/json',
-      },
-      body: JSON.stringify(updItem),
-    })
-
-    const data = await res.json()
 
     setTimeout(function() {
       window.location.reload();
     }, 500);
+  }
+
+  const enviarParaBackend = async (item, id) => {
+    const res = await fetch(`http://localhost:8080/inventario/${id}`, {
+      method: 'PUT',
+      headers: {
+          'Content-type': 'application/json',
+      },
+      body: JSON.stringify(item),
+    })
+
+    const data = await res.json()
   }
 
   // const mudarStatusEquipado = () => {
@@ -68,32 +79,8 @@ const Inventario = ({ }) => {
     <div className="inventario-container">
       <section className='itens-adquiridos'>
         <div className="itens-box">
-           <p className="titulo-itens-adquiridos"> Itens adquiridos </p>
-           <InventarioItens className="item-inventario" equiparItem={equiparItem} itens={itens}></InventarioItens>
-          {/*<div className="item-inventario">
-            <p className="nome-item"> Cabelo 1 </p>
-            <p className="equipado" onClick={() => equiparItem()}> Equipado </p>
-          </div>
-          <div className="item-inventario">
-            <p className="nome-item"> Cabelo 2 </p>
-            <p className="equipar" onClick={() => equiparItem()}> Equipar </p>
-          </div>
-          <div className="item-inventario">
-            <p className="nome-item"> Calça 1 </p>
-            <p className="equipar" onClick={() => equiparItem()}> Equipar </p>
-          </div>
-          <div className="item-inventario">
-            <p className="nome-item"> Calça 2 </p>
-            <p className="equipado" onClick={() => equiparItem()}> Equipado </p>
-          </div>
-          <div className="item-inventario">
-            <p className="nome-item"> Camisa 1 </p>
-            <p className="equipado" onClick={() => equiparItem()}> Equipado </p>
-          </div>
-          <div className="item-inventario">
-            <p className="nome-item"> Camisa 2 </p>
-            <p className="equipar" onClick={() => equiparItem()}> Equipar </p>
-          </div> */}
+          <p className="titulo-itens-adquiridos"> Itens adquiridos </p>
+          <InventarioItens className="item-inventario" equiparItem={equiparItem} itens={itens}></InventarioItens>
         </div>
       </section>
       <section className="personagem">

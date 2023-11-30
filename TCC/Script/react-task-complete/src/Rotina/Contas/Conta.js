@@ -20,21 +20,21 @@ const Conta = ({ completarTarefa }) => {
     }, [])
 
     const fetchContas = async () => {
-        const res = await fetch('http://localhost:5000/contas')
+        const res = await fetch('http://localhost:8080/contas')
         const data = await res.json()
 
         return data
     }
 
     const fetchConta = async (id) => {
-        const res = await fetch(`http://localhost:5000/contas/${id}`)
+        const res = await fetch(`http://localhost:8080/contas/${id}`)
         const data = await res.json()
 
         return data
     }
 
     const addConta = async (conta) => {
-        const res = await fetch('http://localhost:5000/contas', {
+        const res = await fetch('http://localhost:8080/contas', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json',
@@ -53,7 +53,7 @@ const Conta = ({ completarTarefa }) => {
 
     // Delete Conta
     const deleteConta = async (id) => {
-        const res = await fetch(`http://localhost:5000/contas/${id}`, {
+        const res = await fetch(`http://localhost:8080/contas/${id}`, {
             method: 'DELETE',
         })
 
@@ -75,7 +75,7 @@ const Conta = ({ completarTarefa }) => {
         const contaToToggle = await fetchConta(id)
         const updConta = { ...contaToToggle, reminder: !contaToToggle.reminder }
 
-        const res = await fetch(`http://localhost:5000/contas/${id}`, {
+        const res = await fetch(`http://localhost:8080/contas/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-type': 'application/json',

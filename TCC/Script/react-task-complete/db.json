@@ -5,9 +5,9 @@
       "nome": "Pedro",
       "email": "darknighmare1@gmail.com",
       "senha": "teste",
-      "dinheiro": "917",
+      "dinheiro": "42474",
       "nivel": 4,
-      "xp": 40
+      "xp": 90
     }
   ],
   "usuarios": [
@@ -16,9 +16,9 @@
       "nome": "Pedro",
       "email": "darknighmare1@gmail.com",
       "senha": "teste",
-      "dinheiro": "917",
+      "dinheiro": "42474",
       "nivel": 4,
-      "xp": 40
+      "xp": 90
     },
     {
       "id": 2,
@@ -218,6 +218,11 @@
       "text": "Estudar",
       "contador": 19,
       "id": 6
+    },
+    {
+      "texto": "1233",
+      "contador": 0,
+      "id": 7
     }
   ],
   "contas": [
@@ -241,6 +246,13 @@
       "valor": "500",
       "reminder": true,
       "id": 4
+    },
+    {
+      "texto": "122",
+      "dia": "122",
+      "valor": "012",
+      "reminder": false,
+      "id": 5
     }
   ]
 }

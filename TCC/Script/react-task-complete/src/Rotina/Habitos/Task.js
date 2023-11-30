@@ -14,7 +14,7 @@ const Task = ({ task, onDelete, onContador }) => {
           color='blue'
           // href='#'
         /> 
-        <p className='habito-texto'> {task.text}{' '} </p>
+        <p className='habito-texto'> {task.texto}{' '} </p>
         <FaTimes className="check-delete-task"
           onClick={() => onDelete(task.id)}
           size={35}

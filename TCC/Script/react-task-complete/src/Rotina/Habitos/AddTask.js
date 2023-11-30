@@ -1,18 +1,18 @@
 import { useState } from 'react'
 
 const AddTask = ({ onAdd }) => {
-  const [text, setText] = useState('')
+  const [texto, setText] = useState('')
   const [contador, setContador] = useState(0)
 
   const onSubmit = (e) => {
     e.preventDefault()
 
-    if (!text) {
+    if (!texto) {
       alert('Por favor adicione um hábito')
       return
     }
 
-    onAdd({ text, contador })
+    onAdd({ texto, contador })
 
     setText('')
     setContador(0)
@@ -25,7 +25,7 @@ const AddTask = ({ onAdd }) => {
         <input
           type='text'
           placeholder='Nome do Hábito'
-          value={text}
+          value={texto}
           onChange={(e) => setText(e.target.value)}
         />
       </div>

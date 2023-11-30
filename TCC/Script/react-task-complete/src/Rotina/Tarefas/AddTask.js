@@ -1,19 +1,19 @@
 import { useState } from 'react'
 
 const AddTask = ({ onAdd }) => {
-  const [text, setText] = useState('')
-  const [day, setDay] = useState('')
+  const [texto, setText] = useState('')
+  const [dia, setDay] = useState('')
   const [reminder, setReminder] = useState(false)
 
   const onSubmit = (e) => {
     e.preventDefault()
 
-    if (!text) {
+    if (!texto) {
       alert('Por favor adicione uma tarefa')
       return
     }
 
-    onAdd({ text, day, reminder })
+    onAdd({ texto, dia, reminder })
 
     setText('')
     setDay('')
@@ -27,7 +27,7 @@ const AddTask = ({ onAdd }) => {
         <input
           type='text'
           placeholder='Nome da Tarefa'
-          value={text}
+          value={texto}
           onChange={(e) => setText(e.target.value)}
         />
       </div>
@@ -36,7 +36,7 @@ const AddTask = ({ onAdd }) => {
         <input
           type='text'
           placeholder='Dia | Hora'
-          value={day}
+          value={dia}
           onChange={(e) => setDay(e.target.value)}
         />
       </div>
