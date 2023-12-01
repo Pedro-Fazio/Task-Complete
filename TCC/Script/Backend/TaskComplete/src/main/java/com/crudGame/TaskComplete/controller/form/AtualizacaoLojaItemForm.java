@@ -50,11 +50,11 @@ public class AtualizacaoLojaItemForm {
 		this.imagem = imagem;
 	}
 	
-	public String getUsuarioId() {
+	public String getUsuarioEmail() {
 		return usuarioEmail;
 	}
 	
-	public void setUsuarioId(String usuarioEmail) {
+	public void setUsuarioEmail(String usuarioEmail) {
 		this.usuarioEmail = usuarioEmail;
 	}
 }

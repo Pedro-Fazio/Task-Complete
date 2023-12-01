@@ -2,12 +2,12 @@
   "usuarioLogado": [
     {
       "id": 1,
-      "nome": "Pedro",
-      "email": "darknighmare1@gmail.com",
+      "nome": "darknighmare1",
       "senha": "teste",
-      "dinheiro": "42474",
-      "nivel": 4,
-      "xp": 90
+      "email": "darknighmare1@gmail.com",
+      "dinheiro": "0",
+      "nivel": 1,
+      "xp": 0
     }
   ],
   "usuarios": [
@@ -16,9 +16,9 @@
       "nome": "Pedro",
       "email": "darknighmare1@gmail.com",
       "senha": "teste",
-      "dinheiro": "42474",
-      "nivel": 4,
-      "xp": 90
+      "dinheiro": "42489",
+      "nivel": 5,
+      "xp": 5
     },
     {
       "id": 2,
@@ -62,50 +62,55 @@
       "id": 1,
       "nome": "Cabelo 1",
       "preco": "6,90",
-      "img": "https://i.imgur.com/sHllgOM.png",
-      "imgPersonagem": "https://i.imgur.com/sHllgOM.png"
+      "imagem": "https://i.imgur.com/sHllgOM.png"
     },
     {
       "id": 2,
       "nome": "Cabelo 2",
       "preco": "13,90",
-      "img": "https://i.imgur.com/yHRF0JH.png",
-      "imgPersonagem": "https://i.imgur.com/sHllgOM.png"
+      "imagem": "https://i.imgur.com/yHRF0JH.png"
     },
     {
       "id": 3,
       "nome": "Cabelo 3",
       "preco": "8,50",
-      "img": "https://i.imgur.com/weG7Lpm.png",
-      "imgPersonagem": "https://i.imgur.com/sHllgOM.png"
+      "imagem": "https://i.imgur.com/weG7Lpm.png"
     },
     {
       "id": 4,
       "nome": "Calça 1",
       "preco": "49,90",
-      "img": "https://i.imgur.com/OVxM9uP.png",
-      "imgPersonagem": "https://i.imgur.com/sHllgOM.png"
+      "imagem": "https://i.imgur.com/OVxM9uP.png"
     },
     {
       "id": 5,
       "nome": "Calça 2",
       "preco": "89,90",
-      "img": "https://i.imgur.com/bmtquGk.png",
-      "imgPersonagem": "https://i.imgur.com/sHllgOM.png"
+      "imagem": "https://i.imgur.com/bmtquGk.png"
     },
     {
       "id": 6,
       "nome": "Calça 3",
       "preco": "119,90",
-      "img": "https://i.imgur.com/VyauXXP.png",
-      "imgPersonagem": "https://i.imgur.com/sHllgOM.png"
+      "imagem": "https://i.imgur.com/VyauXXP.png"
+    },
+    {
+      "id": 7,
+      "nome": "Camisa 1",
+      "preco": "27,90",
+      "imagem": "https://i.imgur.com/d0Szw4z.png"
     },
     {
       "id": 8,
       "nome": "Camisa 2",
       "preco": "27,90",
-      "img": "https://i.imgur.com/d0Szw4z.png",
-      "imgPersonagem": "https://i.imgur.com/sHllgOM.png"
+      "imagem": "https://i.imgur.com/d0Szw4z.png"
+    },
+    {
+      "id": 9,
+      "nome": "Camisa 3",
+      "preco": "15,00",
+      "imagem": "https://i.imgur.com/E81SPt9.png"
     }
   ],
   "inventario": [
@@ -113,55 +118,49 @@
       "id": 1,
       "nome": "Cabelo 1",
       "preco": "6,90",
-      "img": "https://i.imgur.com/sHllgOM.png",
-      "imgPersonagem": "https://i.imgur.com/sHllgOM.png",
+      "imagem": "https://i.imgur.com/sHllgOM.png",
       "equipado": true
     },
     {
       "id": 2,
       "nome": "Cabelo 2",
       "preco": "13,90",
-      "img": "https://i.imgur.com/yHRF0JH.png",
-      "imgPersonagem": "https://i.imgur.com/sHllgOM.png",
+      "imagem": "https://i.imgur.com/yHRF0JH.png",
       "equipado": false
     },
     {
       "id": 6,
       "nome": "Calça 3",
       "preco": "119,90",
-      "img": "https://i.imgur.com/VyauXXP.png",
-      "imgPersonagem": "https://i.imgur.com/sHllgOM.png",
+      "imagem": "https://i.imgur.com/VyauXXP.png",
       "equipado": true
     },
     {
       "id": 8,
       "nome": "Camisa 2",
       "preco": "27,90",
-      "img": "https://i.imgur.com/d0Szw4z.png",
-      "imgPersonagem": "https://i.imgur.com/sHllgOM.png",
+      "imagem": "https://i.imgur.com/d0Szw4z.png",
       "equipado": false
     },
     {
       "id": 10,
       "nome": "Camisa 4",
       "preco": "20,00",
-      "img": "https://i.imgur.com/E81SPt9.png",
-      "imgPersonagem": "https://i.imgur.com/sHllgOM.png",
+      "imagem": "https://i.imgur.com/E81SPt9.png",
       "equipado": true
     },
     {
       "id": 9,
       "nome": "Camisa 3",
       "preco": "15,00",
-      "img": "https://i.imgur.com/E81SPt9.png",
-      "imgPersonagem": "https://i.imgur.com/sHllgOM.png",
+      "imagem": "https://i.imgur.com/E81SPt9.png",
       "equipado": false
     }
   ],
   "tarefas": [
     {
-      "text": "Tarefa teste",
-      "day": "08/09",
+      "texto": "Tarefa teste",
+      "dia": "08/09",
       "reminder": true,
       "id": 9
     }
@@ -169,53 +168,53 @@
   "diarias": [
     {
       "id": 1,
-      "text": "Fazer almoço",
+      "texto": "Fazer almoço",
       "complete": true
     },
     {
       "id": 2,
-      "text": "Fazer janta",
+      "texto": "Fazer janta",
       "complete": true
     },
     {
       "id": 3,
-      "text": "Tomar banho",
+      "texto": "Tomar banho",
       "complete": true
     },
     {
       "id": 4,
-      "text": "Ir para o trabalho",
+      "texto": "Ir para o trabalho",
       "complete": true
     },
     {
-      "text": "Ir na academia",
-      "complete": true,
-      "id": 5
+      "id": 5,
+      "texto": "Ir na academia",
+      "complete": true
     }
   ],
   "habitos": [
     {
       "id": 2,
-      "text": "Se alongar",
+      "texto": "Se alongar",
       "contador": 20
     },
     {
       "id": 3,
-      "text": "Ler um livro",
+      "texto": "Ler um livro",
       "contador": 13
     },
     {
       "id": 4,
-      "text": "Praticar meditação",
+      "texto": "Praticar meditação",
       "contador": 9
     },
     {
-      "text": "Programar",
-      "contador": 14,
-      "id": 5
+      "id": 5,
+      "texto": "Programar",
+      "contador": 14
     },
     {
-      "text": "Estudar",
+      "texto": "Estudar",
       "contador": 19,
       "id": 6
     },
@@ -228,21 +227,21 @@
   "contas": [
     {
       "id": 2,
-      "text": "Academia",
-      "day": "08/08/2023",
+      "texto": "Academia",
+      "dia": "08/08/2023",
       "valor": "70,90",
       "reminder": false
     },
     {
       "id": 3,
-      "text": "Aluguel",
-      "day": "09/10/2023",
+      "texto": "Aluguel",
+      "dia": "09/10/2023",
       "valor": "760,00",
       "reminder": true
     },
     {
-      "text": "Inglês",
-      "day": "05/12/2023",
+      "texto": "Inglês",
+      "dia": "05/12/2023",
       "valor": "500",
       "reminder": true,
       "id": 4

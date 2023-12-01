@@ -1,61 +1,56 @@
 package com.crudGame.TaskComplete.controller.form;
 
-import com.crudGame.TaskComplete.modelo.Tarefa;
+import com.crudGame.TaskComplete.modelo.Diaria;
 import com.crudGame.TaskComplete.modelo.Usuario;
 import com.crudGame.TaskComplete.modelo.UsuarioLogado;
+import com.crudGame.TaskComplete.repository.DiariaRepository;
 import com.crudGame.TaskComplete.repository.UsuarioLogadoRepository;
 import com.crudGame.TaskComplete.repository.UsuarioRepository;
 
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 
-public class TarefaForm {
-
-
-	private String dia;
-
-	private boolean reminder;
+public class AtualizacaoDiariaForm {
 
 	private String texto;
 
+	private boolean completou;
+
 	private String usuarioEmail;
 	
-	public Tarefa converter(UsuarioRepository usuarioRepository, UsuarioLogadoRepository usuarioLogadoRepository) {
+	public Diaria atualizar (Long id, DiariaRepository diariaRepository, UsuarioLogadoRepository usuarioLogadoRepository, UsuarioRepository usuarioRepository) {
 		UsuarioLogado usuarioLogado = usuarioLogadoRepository.getReferenceById(Long.valueOf(1));
 		Usuario usuario = usuarioRepository.findByEmail(usuarioLogado.getEmail());
 		
-		return new Tarefa(texto, dia, reminder, usuario);
-	}
-	
-	public String getDia() {
-		return dia;
-	}
-	
-	public void setDia(String dia) {
-		this.dia = dia;
-	}
-	
-	public boolean getReminder() {
-		return reminder;
-	}
-	
-	public void setReminder(boolean reminder) {
-		this.reminder = reminder;
+		Diaria diaria = diariaRepository.getReferenceById(id);
+		diaria.setTexto(texto);
+		diaria.setCompletou(completou);
+		diaria.setUsuario(usuario);
+		
+		return diaria;
 	}
 	
 	public String getTexto() {
 		return texto;
 	}
-	
+
 	public void setTexto(String texto) {
 		this.texto = texto;
 	}
-	
-	public String getUsuarioId() {
+
+	public boolean getCompletou() {
+		return completou;
+	}
+
+	public void setCompletou(boolean completou) {
+		this.completou = completou;
+	}
+
+	public String getUsuarioEmail() {
 		return usuarioEmail;
 	}
-	
-	public void setUsuarioId(String usuarioEmail) {
+
+	public void setUsuarioEmail(String usuarioEmail) {
 		this.usuarioEmail = usuarioEmail;
 	}
 }

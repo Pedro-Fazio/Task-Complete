@@ -7,16 +7,21 @@ import InventarioItens from './InventarioItens'
 const Inventario = ({ }) => {
   const [itens, setItens] = useState([])
   const [item, setItem] = useState([])
+  const [usuarioLogado, setUsuarioLogado] = useState()
 
   /*** Requisições ao backend ***/
   useEffect(() => {
     const getItens = async () => {
       const itensFromServer = await fetchItens()
-      console.log('itensFromServer', itensFromServer)
       setItens(itensFromServer)
     }
 
+    const getPerfilInfo = async () => {
+      setUsuarioLogado(await fetchPerfilLogado())
+    }
+
     getItens()
+    getPerfilInfo()
   }, [])
 
   useEffect(() => {
@@ -30,6 +35,12 @@ const Inventario = ({ }) => {
   // }, [updItem]);
 
 
+  const fetchPerfilLogado = async () => {
+    const res = await fetch('http://localhost:8080/usuarioLogado')
+    const data = await res.json()
+
+    return data
+}
 
   const fetchItens = async () => {
     const res = await fetch('http://localhost:8080/inventario')

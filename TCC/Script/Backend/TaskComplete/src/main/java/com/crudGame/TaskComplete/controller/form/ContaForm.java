@@ -5,6 +5,8 @@ import java.io.Console;
 import com.crudGame.TaskComplete.modelo.LojaItem;
 import com.crudGame.TaskComplete.modelo.Conta;
 import com.crudGame.TaskComplete.modelo.Usuario;
+import com.crudGame.TaskComplete.modelo.UsuarioLogado;
+import com.crudGame.TaskComplete.repository.UsuarioLogadoRepository;
 import com.crudGame.TaskComplete.repository.UsuarioRepository;
 
 import jakarta.validation.constraints.NotEmpty;
@@ -23,8 +25,10 @@ public class ContaForm {
 
 	private String usuarioEmail;
 	
-	public Conta converter(UsuarioRepository usuarioRepository) {
-		Usuario usuario = usuarioRepository.findByEmail(usuarioEmail);
+	public Conta converter(UsuarioRepository usuarioRepository, UsuarioLogadoRepository usuarioLogadoRepository) {
+		UsuarioLogado usuarioLogado = usuarioLogadoRepository.getReferenceById(Long.valueOf(1));
+		Usuario usuario = usuarioRepository.findByEmail(usuarioLogado.getEmail());
+		
 		return new Conta(texto, dia, valor, reminder, usuario);
 	}
 	

@@ -1,32 +1,37 @@
 package com.crudGame.TaskComplete.controller.form;
 
 import com.crudGame.TaskComplete.modelo.InventarioItem;
+import com.crudGame.TaskComplete.modelo.Usuario;
+import com.crudGame.TaskComplete.modelo.UsuarioLogado;
 import com.crudGame.TaskComplete.repository.InventarioItemRepository;
+import com.crudGame.TaskComplete.repository.UsuarioLogadoRepository;
+import com.crudGame.TaskComplete.repository.UsuarioRepository;
 
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 
 public class AtualizacaoInventarioItemForm {
-	@NotNull @NotEmpty
+
 	private String nome;
-	@NotNull @NotEmpty
+
 	private String preco;
-	@NotNull @NotEmpty
+
 	private String imagem;
 
 	private boolean equipado;
 
 	private String usuarioEmail;
 	
-	public InventarioItem atualizar (Long id, InventarioItemRepository inventarioItemRepository) {
-		System.out.println(id);
+	public InventarioItem atualizar (Long id, InventarioItemRepository inventarioItemRepository, UsuarioLogadoRepository usuarioLogadoRepository, UsuarioRepository usuarioRepository) {
+		UsuarioLogado usuarioLogado = usuarioLogadoRepository.getReferenceById(Long.valueOf(1));
+		Usuario usuario = usuarioRepository.findByEmail(usuarioLogado.getEmail());
 		
 		InventarioItem inventarioItem = inventarioItemRepository.getReferenceById(id);
 		inventarioItem.setNome(nome);
 		inventarioItem.setImagem(imagem);
 		inventarioItem.setPreco(preco);
 		inventarioItem.setEquipado(equipado);
-		inventarioItem.setUsuario(inventarioItem.getUsuario());
+		inventarioItem.setUsuario(usuario);
 		
 		return inventarioItem;
 	}

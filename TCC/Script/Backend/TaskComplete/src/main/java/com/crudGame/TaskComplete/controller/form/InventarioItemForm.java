@@ -2,6 +2,8 @@ package com.crudGame.TaskComplete.controller.form;
 
 import com.crudGame.TaskComplete.modelo.InventarioItem;
 import com.crudGame.TaskComplete.modelo.Usuario;
+import com.crudGame.TaskComplete.modelo.UsuarioLogado;
+import com.crudGame.TaskComplete.repository.UsuarioLogadoRepository;
 import com.crudGame.TaskComplete.repository.UsuarioRepository;
 
 import jakarta.validation.constraints.NotEmpty;
@@ -9,19 +11,21 @@ import jakarta.validation.constraints.NotNull;
 
 public class InventarioItemForm {
 
-	@NotNull @NotEmpty
+
 	private String nome;
-	@NotNull @NotEmpty
+
 	private String preco;
-	@NotNull @NotEmpty
+
 	private String imagem;
 
 	private boolean equipado; 
 
 	private String usuarioEmail;
 	
-	public InventarioItem converter(UsuarioRepository usuarioRepository) {
-		Usuario usuario = usuarioRepository.findByEmail(usuarioEmail);
+	public InventarioItem converter(UsuarioRepository usuarioRepository, UsuarioLogadoRepository usuarioLogadoRepository) {
+		UsuarioLogado usuarioLogado = usuarioLogadoRepository.getReferenceById(Long.valueOf(1));
+		Usuario usuario = usuarioRepository.findByEmail(usuarioLogado.getEmail());
+		
 		return new InventarioItem(nome, preco, imagem, equipado, usuario);
 	}
 	

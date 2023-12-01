@@ -4,11 +4,13 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 
 @Entity
-public class Usuario {
+public class UsuarioLogado {
 
-	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	//@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Id
  	private Long id;
 	private String nome;
 	private String email;
@@ -16,18 +18,21 @@ public class Usuario {
     private String dinheiro;
     private int nivel;
     private int xp;
+	@ManyToOne
+	private Usuario usuario;
     
-    public Usuario() {
+    public UsuarioLogado() {
 		
 	}
 	
-	public Usuario(String nome, String email, String senha, String dinheiro, int nivel, int xp) {
+	public UsuarioLogado(String nome, String email, String senha, String dinheiro, int nivel, int xp, Usuario usuario) {
 		this.nome = nome;
 		this.senha = senha;
 		this.email = email;
 		this.dinheiro = dinheiro;
 		this.nivel = nivel;
 		this.xp = xp;
+		this.usuario = usuario;
 	}
 
 	@Override
@@ -46,7 +51,7 @@ public class Usuario {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Usuario other = (Usuario) obj;
+		UsuarioLogado other = (UsuarioLogado) obj;
 		if (id == null) {
 			if (other.id != null)
 				return false;
@@ -109,5 +114,13 @@ public class Usuario {
 
 	public void setXp(int xp) {
 		this.xp = xp; 
+	}
+	
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
 	}
 }

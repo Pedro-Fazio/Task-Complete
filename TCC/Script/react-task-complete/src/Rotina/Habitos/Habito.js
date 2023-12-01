@@ -20,7 +20,6 @@ const Habito = ({ completarTarefa }) => {
     }, [])
 
     const fetchHabitos = async () => {
-        //const res = await fetch('http://localhost:5000/habitos')
         const res = await fetch('http://localhost:8080/habitos')
         const data = await res.json()
 
@@ -60,7 +59,7 @@ const Habito = ({ completarTarefa }) => {
     }
 
     // const contaHabito = async (habito) => {
-    //     const res = await fetch(`http://localhost:5000/habitos/${habito.id}`, {
+    //     const res = await fetch(`http://localhost:8080/habitos/${habito.id}`, {
     //         method: 'PUT',
     //         headers: {
     //             'Content-type': 'application/json',

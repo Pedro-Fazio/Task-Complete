@@ -18,14 +18,14 @@ const Login = (props) => {
   }, [])
 
   const fetchPerfisInfo = async () => {
-    const res = await fetch('http://localhost:5000/usuarios')
+    const res = await fetch('http://localhost:8080/usuarios')
     const data = await res.json()
 
     return data
   }
 
   const fetchPerfilInfo = async (id) => {
-    const res = await fetch(`http://localhost:5000/usuarios/${id}`)
+    const res = await fetch(`http://localhost:8080/usuarios/${id}`)
     const data = await res.json()
 
     return data
@@ -81,7 +81,7 @@ const Login = (props) => {
       <h1 className="login-titulo"> Faça o Login </h1>
       <form>
         <label>
-          <p className="login-nome"> Nome </p>
+          <p className="login-nome"> Email </p>
           <input className="login-nome-caixa" type="text"
             value={usuarioNome} onChange={e => setUsuarioNome(e.target.value)} />
         </label>

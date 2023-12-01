@@ -56,21 +56,21 @@ const Perfil = ({ }) => {
   }, [])
 
   const fetchPerfilLogado = async (id) => {
-    const res = await fetch('http://localhost:5000/usuarioLogado')
+    const res = await fetch('http://localhost:8080/usuarioLogado')
     const data = await res.json()
 
     return data
 }
 
   const fetchPerfisInfo = async () => {
-    const res = await fetch('http://localhost:5000/usuarios')
+    const res = await fetch('http://localhost:8080/usuarios')
     const data = await res.json()
 
     return data
   }
 
   const fetchPerfilInfo = async (id) => {
-    const res = await fetch(`http://localhost:5000/usuarios/${id}`)
+    const res = await fetch(`http://localhost:8080/usuarios/${id}`)
     const data = await res.json()
 
     return data
@@ -162,20 +162,12 @@ const Perfil = ({ }) => {
     }
     // console.log("CONSOLE: ", JSON.stringify(usuarioLog))
 
-    const res = await fetch(`http://localhost:5000/usuarios/${usuarioLog.id}`, {
+    const res = await fetch(`http://localhost:8080/usuarios/${usuarioLog.id}`, {
         method: 'PUT',
         headers: {
             'Content-type': 'application/json',
         },
         body: JSON.stringify(updUsuario),
-    })
-
-    const resLogado = await fetch(`http://localhost:5000/usuarioLogado/1`, {
-      method: 'PUT',
-      headers: {
-          'Content-type': 'application/json',
-      },
-      body: JSON.stringify(updUsuario),
     })
 
     const data = await res.json()

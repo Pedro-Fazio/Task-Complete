@@ -6,6 +6,8 @@ import com.crudGame.TaskComplete.modelo.Habito;
 import com.crudGame.TaskComplete.modelo.LojaItem;
 import com.crudGame.TaskComplete.modelo.Tarefa;
 import com.crudGame.TaskComplete.modelo.Usuario;
+import com.crudGame.TaskComplete.modelo.UsuarioLogado;
+import com.crudGame.TaskComplete.repository.UsuarioLogadoRepository;
 import com.crudGame.TaskComplete.repository.UsuarioRepository;
 
 import jakarta.validation.constraints.NotEmpty;
@@ -19,8 +21,10 @@ public class HabitoForm {
 
 	private String usuarioEmail;
 	
-	public Habito converter(UsuarioRepository usuarioRepository) {
-		Usuario usuario = usuarioRepository.findByEmail(usuarioEmail);
+	public Habito converter(UsuarioRepository usuarioRepository, UsuarioLogadoRepository usuarioLogadoRepository) {
+		UsuarioLogado usuarioLogado = usuarioLogadoRepository.getReferenceById(Long.valueOf(1));
+		Usuario usuario = usuarioRepository.findByEmail(usuarioLogado.getEmail());
+		
 		return new Habito(texto, contador, usuario);
 	}
 	

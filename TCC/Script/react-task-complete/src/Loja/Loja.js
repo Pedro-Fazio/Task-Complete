@@ -14,14 +14,16 @@ const Loja = ({ }) => {
     useEffect(() => {
         const getItens = async () => {
             const itensFromServer = await fetchItens()
-            const perfilLogadoFromServer = await fetchPerfilLogado()
-            const perfilInfoFromServer = await fetchPerfisInfo()
             setItens(itensFromServer)
-            setUsuarioLogado(perfilLogadoFromServer)
-            setUsuariosInfo(perfilInfoFromServer)
+        }
+
+        const getPerfilInfo = async () => {      
+            setUsuarioLogado(await fetchPerfilLogado())
+            setUsuariosInfo(await fetchPerfisInfo())
         }
 
         getItens()
+        getPerfilInfo()
     }, [])
 
 
@@ -40,21 +42,21 @@ const Loja = ({ }) => {
     }
 
     const fetchPerfilLogado = async (id) => {
-        const res = await fetch('http://localhost:5000/usuarioLogado')
+        const res = await fetch('http://localhost:8080/usuarioLogado')
         const data = await res.json()
     
         return data
     }
 
     const fetchPerfilInfo = async (id) => {
-        const res = await fetch(`http://localhost:5000/usuarios/${id}`)
+        const res = await fetch(`http://localhost:8080/usuarios/${id}`)
         const data = await res.json()
     
         return data
     }
 
     const fetchPerfisInfo = async () => {
-        const res = await fetch('http://localhost:5000/usuarios')
+        const res = await fetch('http://localhost:8080/usuarios')
         const data = await res.json()
     
         return data
@@ -69,7 +71,7 @@ const Loja = ({ }) => {
         delete item.id;
         const updItem = { ...item, equipado: false }
 
-        console.log("é multiplayer", updItem)
+        //console.log("é multiplayer", updItem)
 
         const res = await fetch('http://localhost:8080/inventario', {
             method: 'POST',
@@ -98,15 +100,7 @@ const Loja = ({ }) => {
         // console.log("DINHEIRO: ", dinheiroAtualizado)
         // console.log("DINHEIRO: ", JSON.stringify(updUsuario))
 
-        const res = await fetch(`http://localhost:5000/usuarios/${idPerfil}`, {
-            method: 'PUT',
-            headers: {
-                'Content-type': 'application/json',
-            },
-            body: JSON.stringify(updUsuario),
-        })
-
-        const resLogado = await fetch(`http://localhost:5000/usuarioLogado/1`, {
+        const res = await fetch(`http://localhost:8080/usuarios/${idPerfil}`, {
             method: 'PUT',
             headers: {
                 'Content-type': 'application/json',

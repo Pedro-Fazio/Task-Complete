@@ -21,7 +21,11 @@ import com.crudGame.TaskComplete.controller.dto.LojaItemDto;
 import com.crudGame.TaskComplete.controller.form.AtualizacaoLojaItemForm;
 import com.crudGame.TaskComplete.controller.form.LojaItemForm;
 import com.crudGame.TaskComplete.modelo.LojaItem;
+import com.crudGame.TaskComplete.modelo.Tarefa;
+import com.crudGame.TaskComplete.modelo.Usuario;
+import com.crudGame.TaskComplete.modelo.UsuarioLogado;
 import com.crudGame.TaskComplete.repository.LojaItemRepository;
+import com.crudGame.TaskComplete.repository.UsuarioLogadoRepository;
 import com.crudGame.TaskComplete.repository.UsuarioRepository;
 
 import jakarta.transaction.Transactional;
@@ -37,18 +41,22 @@ public class LojaItemController {
 	@Autowired
 	private UsuarioRepository usuarioRepository;
 	
+	@Autowired
+	private UsuarioLogadoRepository usuarioLogadoRepository;
+	
 	@GetMapping
 	public List<LojaItemDto> lista(String nomeUsuario) {
 		if(nomeUsuario == null) {
-			List<LojaItem> lojaItens = lojaItemRepository.findAll();
+			//List<LojaItem> lojaItens = lojaItemRepository.findAll();
+			UsuarioLogado usuarioLogado = usuarioLogadoRepository.getReferenceById(Long.valueOf(1));
+			Usuario usuario = usuarioRepository.findByEmail(usuarioLogado.getEmail());
+			List<LojaItem> lojaItens = lojaItemRepository.findByUsuarioId(usuario.getId());
+			
 			return LojaItemDto.converter(lojaItens);
 		} else {
 			List<LojaItem> lojaItens = lojaItemRepository.findByUsuario_Nome(nomeUsuario);
 			return LojaItemDto.converter(lojaItens);
 		}
-				
-		//LojaItem lojaItem = new LojaItem("Cabelo 1", "6,90", "https://i.imgur.com/sHllgOM.png", new Usuario("Pedroo", "darknighmare1@gmail.com", "teste", "917", 4, 40));
-		//return LojaItemDto.converter(Arrays.asList(lojaItem, lojaItem, lojaItem));
 	}
 	
 	@PostMapping
@@ -64,7 +72,6 @@ public class LojaItemController {
 	
 	@GetMapping("/{id}")
 	public ResponseEntity<DetalhesLojaItemDto> detalhar(@PathVariable Long id) {
-		//LojaItem lojaItem = lojaItemRepository.getReferenceById(id);
 		Optional<LojaItem> lojaItem = lojaItemRepository.findById(id);
 		if(lojaItem.isPresent()) {
 			return ResponseEntity.ok(new DetalhesLojaItemDto(lojaItem.get()));			
@@ -83,8 +90,6 @@ public class LojaItemController {
 		} else {
 			return ResponseEntity.notFound().build();
 		}
-		
-		
 	}
 	
 	@DeleteMapping("/{id}")

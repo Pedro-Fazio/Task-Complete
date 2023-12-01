@@ -28,32 +28,50 @@ function App() {
 
   useEffect(() => {
     const getPerfilInfo = async () => {
-      const perfilInfoFromServer = await fetchPerfisInfo()
-      const perfilLogadoFromServer = await fetchPerfilLogado()
-      setUsuarioLogado(perfilLogadoFromServer)
-      setUsuariosInfo(perfilInfoFromServer)
+      //const perfilInfoFromServer = await fetchPerfisInfo()
+      //const perfilLogadoFromServer = await fetchPerfilLogado()
+      // setUsuarioLogado(perfilLogadoFromServer)
+      // setUsuariosInfo(perfilInfoFromServer)
+
+      setUsuarioLogado(await fetchPerfilLogado())
+      setUsuariosInfo(await fetchPerfisInfo())
     }
 
     getPerfilInfo()
   }, [])
 
-  const fetchPerfilLogado = async (id) => {
-    const res = await fetch('http://localhost:5000/usuarioLogado')
+  useEffect(() => {
+    // const getPerfInfo = async () => {
+    //   const perfilInfoFromServer = await fetchPerfisInfo()
+    // }
+    // getPerfInfo()
+
+    //alert("usuariosInfo: ", usuariosInfo)
+    //alert("usuariosInfo: ", perfilInfoFromServer)
+
+  }, [usuariosInfo])
+
+  const fetchPerfilLogado = async () => {
+    const res = await fetch('http://localhost:8080/usuarioLogado')
     const data = await res.json()
 
     return data
 }
 
   const fetchPerfisInfo = async () => {
-    const res = await fetch('http://localhost:5000/usuarios')
+    const res = await fetch('http://localhost:8080/usuarios')
     const data = await res.json()
+
+    //alert("usuariosInfo: ", res)
 
     return data
   }
 
   const fetchPerfilInfo = async (id) => {
-    const res = await fetch(`http://localhost:5000/usuarios/${id}`)
+    const res = await fetch(`http://localhost:8080/usuarios/${id}`)
     const data = await res.json()
+
+    //alert("perfilLogado: ", data)
 
     return data
 }
@@ -73,15 +91,7 @@ function App() {
 
     const updUsuario = { ...usuario, xp: xp, nivel: nivel }
 
-    const res = await fetch(`http://localhost:5000/usuarios/${id}`, {
-      method: 'PUT',
-      headers: {
-          'Content-type': 'application/json',
-      },
-      body: JSON.stringify(updUsuario),
-    })
-
-    const resLogado = await fetch(`http://localhost:5000/usuarioLogado/1`, {
+    const res = await fetch(`http://localhost:8080/${id}`, {
       method: 'PUT',
       headers: {
           'Content-type': 'application/json',
@@ -110,20 +120,12 @@ function App() {
 
 
 
-    const res = await fetch(`http://localhost:5000/usuarios/${usuarioLog.id}`, {
+    const res = await fetch(`http://localhost:8080/usuarios/${usuarioLog.id}`, {
         method: 'PUT',
         headers: {
             'Content-type': 'application/json',
         },
         body: JSON.stringify(updUsuario),
-    })
-
-    const resLogado = await fetch(`http://localhost:5000/usuarioLogado/1`, {
-      method: 'PUT',
-      headers: {
-          'Content-type': 'application/json',
-      },
-      body: JSON.stringify(updUsuario),
     })
 
     const data = await res.json()
@@ -145,12 +147,13 @@ function App() {
     //let id = usuarioLogadoFromServer.id
     //let id = usuarioLogadoFromServer[0].id
 
-    const updUsuario = { ...usuario, id: 1 }
+    const updUsuario = { ...usuario, id: usuarioLogadoFromServer.id }
     // console.log(JSON.stringify(usuarioLogadoFromServer))
 
+    console.log("usuarioLogadoId: ", usuarioLogadoFromServer)
+    //alert("usuarioLogadoId: ", usuario)
 
-    // const res = await fetch(`http://localhost:5000/usuarioLogado/${usuario.id}`, {
-    const res = await fetch(`http://localhost:5000/usuarioLogado/1`, {
+    const res = await fetch(`http://localhost:8080/usuarioLogado/1`, {
       method: 'PUT',
       headers: {
           'Content-type': 'application/json',
@@ -168,7 +171,12 @@ function App() {
     } else if(estadoLogin === 2) {
       // return <Logado nomeUsuario={nomeUsuario}/>
 
+      //alert("usuariosInfo: ", usuariosInfo)
+
       let usuarioLog = usuariosInfo.filter(usuario => usuario?.nome.includes(nomeUsuario));
+      
+      //alert("usuarioLogadoId: ", usuarioLog)
+      
       usuarioLog = usuarioLog[0]
       logarUsuario(usuarioLog)
 

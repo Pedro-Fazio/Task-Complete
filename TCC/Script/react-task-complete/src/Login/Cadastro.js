@@ -28,7 +28,7 @@ const Cadastro = (props) => {
       let nome = usuarioNome.split("@")[0];
       const updUsuario = { ...usuario, nome: nome, email: usuarioNome, dinheiro: "0", nivel: 1, xp: 0 }
 
-      const res = await fetch('http://localhost:5000/usuarios/', {
+      const res = await fetch('http://localhost:8080/usuarios', {
         method: 'POST',
         headers: {
           'Content-type': 'application/json'
