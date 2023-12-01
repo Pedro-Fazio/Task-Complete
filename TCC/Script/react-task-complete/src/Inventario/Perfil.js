@@ -4,12 +4,10 @@ import { FaEdit } from 'react-icons/fa'
 import { AiFillCheckCircle } from 'react-icons/ai'
 import './Perfil.css';
 
-const Perfil = ({ }) => {
+const Perfil = ({ darkModeVerify }) => {
   const [perfilInfo, setPerfilInfo] = useState([])
   const [usuarioLogado, setUsuarioLogado] = useState()
-  //const [usuario, setUsuario] = useState()
-  // const [perfilAtual, setPerfilAtual] = useState()
-  //let perfilAtual;
+  const [isDarkMode, setIsDarkMode] = useState(false)
 
 
   /*** Requisições ao backend ***/
@@ -20,40 +18,59 @@ const Perfil = ({ }) => {
       const perfilLogadoFromServer = await fetchPerfilLogado()
       setUsuarioLogado(perfilLogadoFromServer)
       setPerfilInfo(perfilInfoFromServer)
-      carregaInfos(perfilInfoFromServer, perfilLogadoFromServer)
-      // console.log("DSLJFKDS: ", JSON.stringify(perfilInfoFromServer))
-      // console.log("DSLJFKDS: ", JSON.stringify(perfilInfo))
+
+      carregaInfos(perfilLogadoFromServer)
     }
 
-    const carregaInfos = (info, infoLogado) => {
-      let inputNome = document.querySelector(".nome-form input");
-      let inputEmail = document.querySelector(".email-form input");
+    const carregaInfos = (infoLogado) => {
+      //let inputNome = document.querySelector(".nome-form input");
+      //let inputEmail = document.querySelector(".email-form input");
 
-      inputNome.value = infoLogado[0]?.nome
-      inputEmail.value = infoLogado[0]?.email
-
-      // if(usuarioLogado && usuarioLogado[0]) {
-      //   inputNome.value = usuarioLogado[0]?.nome
-      // } else {
-      //   setTimeout(function () {
-      //     carregaInfos(info)
-      //   }, 500);
-      // }
-
-      // if(usuarioLogado && usuarioLogado[0]) {
-      //   inputEmail.value = usuarioLogado[0]?.email
-      // } else {
-      //   setTimeout(function () {
-      //     carregaInfos(info)
-      //   }, 500);
-      // }
+      if (infoLogado !== undefined) {
+        //inputNome.value = infoLogado[0]?.nome
+        //inputEmail.value = infoLogado[0]?.email
+      }
 
       barraProgresso()
-      // inputNome.value = perfilInfo[0].nome;
     }
 
     getPerfilInfo()
   }, [])
+
+  useEffect(() => {
+    const iniciaDarkMode = () => {
+      if (usuarioLogado !== undefined) {
+        setIsDarkMode(usuarioLogado[0].isDarkMode);
+      }
+    }
+
+  iniciaDarkMode()
+
+}, [usuarioLogado]);
+
+  useEffect(() => {
+  const handleToggleDarkMode = () => {
+    
+    let nomeForm = document.querySelector('.nome-form-label');
+    let emailForm = document.querySelector('.email-form-label');
+    let perfilTitulo = document.querySelector('.perfil-titulo');
+
+
+    if(!isDarkMode) {
+      // nomeForm.style.color = '#fff';
+      // emailForm.style.color = '#fff';
+      // perfilTitulo.style.color = '#fff';
+      //nomeForm.style.setProperty('-webkit-text-stroke', '1px #fff', 'important');
+    } else {
+      // nomeForm.style.color = '#111';
+      // emailForm.style.color = '#111';
+      // perfilTitulo.style.color = '#111';
+    }
+  };
+
+  handleToggleDarkMode()
+
+  }, [isDarkMode, darkModeVerify]);
 
   const fetchPerfilLogado = async (id) => {
     const res = await fetch('http://localhost:8080/usuarioLogado')
@@ -75,6 +92,7 @@ const Perfil = ({ }) => {
 
     return data
   }
+
 
   /*** Funcionalidades do Perfil ***/
 
@@ -112,19 +130,6 @@ const Perfil = ({ }) => {
     let concluirEdicaoEmail = document.querySelector(".concluir-edicao-email");
     let inputEmail = document.querySelector(".email-form input");
 
-    // setPerfilAtual({
-    //   id: 1,
-    //   nome: inputNome.value,
-    //   email: inputEmail.value,
-    //   senha: "teste"
-    // })
-    // perfilAtual = {
-    //   id: 1,
-    //   nome: inputNome.value,
-    //   email: inputEmail.value,
-    //   senha: "teste"
-    // }
-
     if (opcao == "nome") {
       faEditNome.setAttribute("style", "display: block");
       concluirEdicaoNome.setAttribute("style", "display: none");
@@ -142,12 +147,6 @@ const Perfil = ({ }) => {
   const adicionarNoServidor = async (infos, opcao) => {
     let opcaoEscolhida = opcao;
     let inputNome = document.querySelector(".nome-form input");
-
-    // let dadoTeste = {
-    //   nome: "Testee",
-    //   email: "testee@gmail.com",
-    //   senha: "testee"
-    // }
 
     let usuarioLog = perfilInfo.filter(usuario => usuario?.email.includes(usuarioLogado[0].email));
     usuarioLog = usuarioLog[0]
@@ -193,8 +192,9 @@ const Perfil = ({ }) => {
         <p className="perfil-titulo"> Informações </p>
         <form className="form-info">
           <span className='nome-form'>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" disabled required />
+            <label for="nome" className='nome-form-label'>Nome:</label>
+            <input type="text" id="nome" name="nome" 
+            disabled required />
             <FaEdit className="fa-edit-nome"
               size={30}
               // onClick={() => barraProgresso()}
@@ -207,8 +207,9 @@ const Perfil = ({ }) => {
             />
           </span>
           <span className='email-form'>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" /*value={perfilInfo[0].email}*/ disabled required />
+            <label for="email" className='email-form-label'>Email:</label>
+            <input type="email" id="email" name="email" 
+            /*value={perfilInfo[0].email}*/ disabled required />
             <FaEdit className="fa-edit-email"
               size={30}
               onClick={() => onEdit("email")}
@@ -228,7 +229,7 @@ const Perfil = ({ }) => {
         <Link to="/inventario"> <a className="texto-personagem" href="#">Personalizar Personagem </a> </Link>
       </section>
       <section className="nivel-perfil">
-        {usuarioLogado && usuarioLogado[0] && <p>{usuarioLogado[0].nivel}</p>}
+        {usuarioLogado && usuarioLogado[0] && <p className='nivel-numero'>{usuarioLogado[0].nivel}</p>}
         {/* <p> Nível {usuarioLogado[0]?.nivel} </p> */}
         {/* <p> Nível {perfilInfo[0]?.nivel} </p> */}
         <div className="barra-nivel" onLoad={barraProgresso()}>

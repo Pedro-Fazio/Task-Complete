@@ -9,8 +9,8 @@
     font-size: 30px;
     box-sizing: border-box;
     padding: 25px 35px;
-    background-color: #6bcafd;
-    border: 1px solid #6bcafd;
+    background-color: #005A75;
+    border: 1px solid #005A75;
     border-radius: 20px;
     cursor: pointer;
     color: white;
@@ -23,5 +23,6 @@
 
 .btn-rotina:hover {
     background-color: white;
-    color: #6bcafd;
+    color: #005A75;
+    border: 2px solid #000000 ;
 }

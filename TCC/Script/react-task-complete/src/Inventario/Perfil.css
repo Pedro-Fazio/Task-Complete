@@ -59,6 +59,16 @@
     display: flex;
 }
 
+.nome-form-label {
+    /* -webkit-text-stroke: 1px #fff !important; */
+    color: black;
+}
+
+.email-form-label {
+    /* -webkit-text-stroke: 1px #fff !important; */
+    color: black;
+}
+
 .fa-edit-nome, .fa-edit-email {
     /* display: none; */
     color: black; 

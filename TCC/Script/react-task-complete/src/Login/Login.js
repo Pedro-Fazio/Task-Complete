@@ -78,15 +78,15 @@ const Login = (props) => {
 
   return (
     <div className="login-wrapper">
-      <h1 className="login-titulo"> Faça o Login </h1>
+      <h1 className="login-titulo" style={{color:'black'}}> Faça o Login </h1>
       <form>
         <label>
-          <p className="login-nome"> Email </p>
+          <p className="login-nome" style={{fontWeight: 'bold'}}> Email </p>
           <input className="login-nome-caixa" type="text"
             value={usuarioNome} onChange={e => setUsuarioNome(e.target.value)} />
         </label>
         <label>
-          <p className="login-senha"> Senha </p>
+          <p className="login-senha" style={{fontWeight: 'bold'}}> Senha </p>
           <input className="login-senha-caixa" type="password"
             value={usuarioSenha} onChange={e => setUsuarioSenha(e.target.value)} />
         </label>

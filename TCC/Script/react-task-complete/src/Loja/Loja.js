@@ -155,7 +155,7 @@ const Loja = ({ }) => {
 
     return (
         <div className='container-loja'>
-            <p className="title"> Loja </p>
+            <p className="title-loja" style={{fontSize: '60px'}}> Loja </p>
             {/* <p className="adicionado-carrinho-pop-up"> Item adicionado ao Carrinho </p> */}
             <p className="adicionado-carrinho-pop-up"> Item comprado com sucesso </p>
             {itens.length > 0 ?

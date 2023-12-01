@@ -40,16 +40,16 @@ const Cadastro = (props) => {
 
   return(
     <div className="login-wrapper">
-      <h1 className="login-titulo"> Faça o cadastro </h1>
+      <h1 className="login-titulo" style={{color:'black'}}> Faça o cadastro </h1>
       <form>
         <label>
           {/* <p className="login-nome"> Nome </p> */}
-          <p className="login-nome"> Email </p>
+          <p className="login-nome" style={{fontWeight: 'bold'}}> Email </p>
           <input type="text" className="login-nome-caixa"
           value={usuarioNome} onChange={e => setUsuarioNome(e.target.value)}/>
         </label>
         <label>
-          <p className="login-senha"> Senha </p>
+          <p className="login-senha" style={{fontWeight: 'bold'}}> Senha </p>
           <input type="password" className="login-senha-caixa"
           value={usuarioSenha} onChange={e => setUsuarioSenha(e.target.value)}/>
         </label>

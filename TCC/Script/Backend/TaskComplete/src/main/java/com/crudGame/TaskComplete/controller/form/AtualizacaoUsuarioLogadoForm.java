@@ -17,6 +17,8 @@ public class AtualizacaoUsuarioLogadoForm {
 	private int nivel;
 	private int xp;
 	private String usuarioEmail;
+	private boolean isDarkMode;
+	private boolean isBigSize;
 	
 	public UsuarioLogado atualizar (Long id, UsuarioLogadoRepository usuarioLogadoRepository, UsuarioRepository usuarioRepository) {
 		UsuarioLogado usuarioLogado = usuarioLogadoRepository.getReferenceById(id);
@@ -29,6 +31,8 @@ public class AtualizacaoUsuarioLogadoForm {
 		usuarioLogado.setNivel(nivel);
 		usuarioLogado.setXp(xp);
 		usuarioLogado.setUsuario(usuario);
+		usuarioLogado.setIsDarkMode(isDarkMode);
+		usuarioLogado.setIsBigSize(isBigSize);
 		
 		return usuarioLogado;
 	}
@@ -87,5 +91,21 @@ public class AtualizacaoUsuarioLogadoForm {
 
 	public void setUsuarioEmail(String usuarioEmail) {
 		this.usuarioEmail = usuarioEmail;
+	}
+	
+	public boolean getIsDarkMode() {
+		return isDarkMode;
+	}
+
+	public void setIsDarkMode(boolean isDarkMode) {
+		this.isDarkMode = isDarkMode;
+	}
+	
+	public boolean getIsBigSize() {
+		return isBigSize;
+	}
+
+	public void setIsBigSize(boolean isBigSize) {
+		this.isBigSize = isBigSize; 
 	}
 }

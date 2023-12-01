@@ -16,18 +16,23 @@ public class Usuario {
     private String dinheiro;
     private int nivel;
     private int xp;
+    private boolean isDarkMode;
+    private boolean isBigSize;
     
     public Usuario() {
 		
 	}
 	
-	public Usuario(String nome, String email, String senha, String dinheiro, int nivel, int xp) {
+	public Usuario(String nome, String email, String senha, String dinheiro, int nivel, int xp,
+			boolean isDarkMode, boolean isBigSize) {
 		this.nome = nome;
 		this.senha = senha;
 		this.email = email;
 		this.dinheiro = dinheiro;
 		this.nivel = nivel;
 		this.xp = xp;
+		this.isDarkMode = isDarkMode;
+		this.isBigSize = isBigSize;
 	}
 
 	@Override
@@ -109,5 +114,21 @@ public class Usuario {
 
 	public void setXp(int xp) {
 		this.xp = xp; 
+	}
+	
+	public boolean getIsDarkMode() {
+		return isDarkMode;
+	}
+
+	public void setIsDarkMode(boolean isDarkMode) {
+		this.isDarkMode = isDarkMode; 
+	}
+	
+	public boolean getIsBigSize() {
+		return isBigSize;
+	}
+
+	public void setIsBigSize(boolean isBigSize) {
+		this.isBigSize = isBigSize; 
 	}
 }

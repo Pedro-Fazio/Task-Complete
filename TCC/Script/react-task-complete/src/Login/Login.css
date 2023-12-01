@@ -18,8 +18,8 @@
     font-size: 20px;
     box-sizing: border-box;
     padding: 10px 35px;
-    background-color: #288bc1;
-    border: 1px solid #288bc1;
+    background-color: #005A75;
+    border: 1px solid #005A75;
     border-radius: 12px;
     cursor: pointer;
     color: white;
@@ -30,7 +30,7 @@
 
 .login-entrar:hover, .login-cadastro:hover {
     background-color: white;
-    color: #288bc1;
+    color: #005A75;
 }
 
 .login-nome-caixa, .login-senha-caixa, .login-nome, .login-senha {
@@ -40,7 +40,7 @@
 .login-titulo {
     font-size: 40px;
     margin-bottom: 50px;
-    color: #288bc1;
+    color: #005A75;
 }
 
 .button-login {

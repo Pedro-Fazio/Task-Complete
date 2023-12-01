@@ -22,17 +22,13 @@ function App() {
   const [nomeUsuario, setNomeUsuario] = useState()
   const [estadoLogin, setEstadoLogin] = useState(1)
   const [usuarioLogado, setUsuarioLogado] = useState()
+  const [darkModeVerify, setDarkModeVerify] = useState()
   //var usuarioLogado
 
   /*** Requisições ao backend ***/
 
   useEffect(() => {
     const getPerfilInfo = async () => {
-      //const perfilInfoFromServer = await fetchPerfisInfo()
-      //const perfilLogadoFromServer = await fetchPerfilLogado()
-      // setUsuarioLogado(perfilLogadoFromServer)
-      // setUsuariosInfo(perfilInfoFromServer)
-
       setUsuarioLogado(await fetchPerfilLogado())
       setUsuariosInfo(await fetchPerfisInfo())
     }
@@ -40,17 +36,8 @@ function App() {
     getPerfilInfo()
   }, [])
 
-  useEffect(() => {
-    // const getPerfInfo = async () => {
-    //   const perfilInfoFromServer = await fetchPerfisInfo()
-    // }
-    // getPerfInfo()
-
-    //alert("usuariosInfo: ", usuariosInfo)
-    //alert("usuariosInfo: ", perfilInfoFromServer)
-
-  }, [usuariosInfo])
-
+    /*** Fetchs ***/
+  
   const fetchPerfilLogado = async () => {
     const res = await fetch('http://localhost:8080/usuarioLogado')
     const data = await res.json()
@@ -274,7 +261,7 @@ function App() {
         <Route path='/perfil' element={
           <div>
             <Header usuariosInfo={usuariosInfo}/>
-            <Perfil />
+            <Perfil darkModeVerify={darkModeVerify} />
             <Footer />
           </div>
         } />

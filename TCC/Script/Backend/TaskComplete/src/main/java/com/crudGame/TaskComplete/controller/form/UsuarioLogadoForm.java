@@ -22,7 +22,8 @@ public class UsuarioLogadoForm {
 	
 	public UsuarioLogado converter(UsuarioRepository usuarioRepository) {
 		Usuario usuario = usuarioRepository.findByEmail(usuarioEmail);
-		return new UsuarioLogado(nome, email, senha, dinheiro, nivel, xp, usuario);
+		return new UsuarioLogado(nome, email, senha, dinheiro, nivel, xp,
+				usuario, usuario.getIsDarkMode(), usuario.getIsBigSize());
 	}
 	
 	public String getNome() {

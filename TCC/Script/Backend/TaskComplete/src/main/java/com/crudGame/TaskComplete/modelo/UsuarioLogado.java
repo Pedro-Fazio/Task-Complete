@@ -20,12 +20,15 @@ public class UsuarioLogado {
     private int xp;
 	@ManyToOne
 	private Usuario usuario;
+	private boolean isDarkMode;
+	private boolean isBigSize;
     
     public UsuarioLogado() {
 		
 	}
 	
-	public UsuarioLogado(String nome, String email, String senha, String dinheiro, int nivel, int xp, Usuario usuario) {
+	public UsuarioLogado(String nome, String email, String senha, String dinheiro, int nivel, int xp,
+			Usuario usuario, boolean isDarkMode, boolean isBigSize) {
 		this.nome = nome;
 		this.senha = senha;
 		this.email = email;
@@ -33,6 +36,8 @@ public class UsuarioLogado {
 		this.nivel = nivel;
 		this.xp = xp;
 		this.usuario = usuario;
+		this.isDarkMode = isDarkMode;
+		this.isBigSize = isBigSize;
 	}
 
 	@Override
@@ -122,5 +127,21 @@ public class UsuarioLogado {
 
 	public void setUsuario(Usuario usuario) {
 		this.usuario = usuario;
+	}
+	
+	public boolean getIsDarkMode() {
+		return isDarkMode;
+	}
+
+	public void setIsDarkMode(boolean isDarkMode) {
+		this.isDarkMode = isDarkMode; 
+	}
+	
+	public boolean getIsBigSize() {
+		return isBigSize;
+	}
+
+	public void setIsBigSize(boolean isBigSize) {
+		this.isBigSize = isBigSize; 
 	}
 }

@@ -19,6 +19,8 @@ public class UsuarioLogadoDto {
 	private int nivel;
 	private int xp;
 	private String usuarioEmail;
+	private boolean isDarkMode;
+	private boolean isBigSize;
 	
 	public UsuarioLogadoDto(UsuarioLogado usuarioLogado) {
 		this.id = usuarioLogado.getId();
@@ -29,6 +31,8 @@ public class UsuarioLogadoDto {
 		this.nivel = usuarioLogado.getNivel();
 		this.xp = usuarioLogado.getXp();
 		this.usuarioEmail = usuarioLogado.getUsuario().getEmail();
+		this.isDarkMode = usuarioLogado.getIsDarkMode();
+		this.isBigSize = usuarioLogado.getIsBigSize();
 	}
 	
 	public static List<UsuarioLogadoDto> converter(List<UsuarioLogado> usuariosLogados) {
@@ -66,5 +70,21 @@ public class UsuarioLogadoDto {
 	
 	public String usuarioEmail() {
 		return usuarioEmail;
+	}
+	
+	public boolean getIsDarkMode() {
+		return isDarkMode;
+	}
+
+	public void setIsDarkMode(boolean isDarkMode) {
+		this.isDarkMode = isDarkMode; 
+	}
+	
+	public boolean getIsBigSize() {
+		return isBigSize;
+	}
+
+	public void setIsBigSize(boolean isBigSize) {
+		this.isBigSize = isBigSize; 
 	}
 }

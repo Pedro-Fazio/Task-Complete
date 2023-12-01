@@ -19,7 +19,7 @@ public class UsuarioForm {
 	
 	public Usuario converter(UsuarioRepository usuarioRepository) {
 		//Usuario usuario = usuarioRepository.findByEmail(usuarioEmail);
-		return new Usuario(nome, email, senha, dinheiro, nivel, xp);
+		return new Usuario(nome, email, senha, dinheiro, nivel, xp, false, false);
 	}
 	
 	public String getNome() {

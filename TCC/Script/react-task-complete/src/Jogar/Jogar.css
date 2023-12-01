@@ -25,8 +25,8 @@
     box-sizing: border-box;
     padding: 25px 35px;
     font-size: 40px;
-    background-color: #FF8C00;
-    border: 1px solid #FF8C00;
+    background-color: #c56c00;
+    border: 1px solid #c56c00;
     border-radius: 20px;
     cursor: pointer;
     color: white;
@@ -38,5 +38,5 @@
 
 .botao-jogar-agora:hover {
     background-color: white;
-    color: #FF8C00;
+    color: #c56c00;
 }

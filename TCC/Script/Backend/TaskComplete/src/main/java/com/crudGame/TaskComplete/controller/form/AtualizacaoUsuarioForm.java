@@ -14,6 +14,8 @@ public class AtualizacaoUsuarioForm {
 	private String dinheiro;
 	private int nivel;
 	private int xp;
+	private boolean isDarkMode;
+	private boolean isBigSize;
 	
 	public Usuario atualizar (Long id, UsuarioRepository usuarioRepository) {
 		Usuario usuario = usuarioRepository.getReferenceById(id);
@@ -23,6 +25,8 @@ public class AtualizacaoUsuarioForm {
 		usuario.setDinheiro(dinheiro);
 		usuario.setNivel(nivel);
 		usuario.setXp(xp);
+		usuario.setIsDarkMode(isDarkMode);
+		usuario.setIsBigSize(isBigSize);
 		
 		return usuario;
 	}
@@ -73,5 +77,21 @@ public class AtualizacaoUsuarioForm {
 
 	public void setXp(int xp) {
 		this.xp = xp;
+	}
+	
+	public boolean getIsDarkMode() {
+		return isDarkMode;
+	}
+
+	public void setIsDarkMode(boolean isDarkMode) {
+		this.isDarkMode = isDarkMode; 
+	}
+	
+	public boolean getIsBigSize() {
+		return isBigSize;
+	}
+
+	public void setIsBigSize(boolean isBigSize) {
+		this.isBigSize = isBigSize; 
 	}
 }

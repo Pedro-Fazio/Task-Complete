@@ -40,10 +40,10 @@ const Rotina = ({ completarTarefa }) => {
             <Link to="/rotina/contas"> <button className='btn-rotina'> Contas </button> </Link> */}
 
             <div className='opcoes-rotina'>
-                <button className='btn-rotina' onClick={() => mudarEscolhaRotina("tarefas")}> Tarefas </button>
-                <button className='btn-rotina' onClick={() => mudarEscolhaRotina("diarias")}> Diarias </button>
-                <button className='btn-rotina' onClick={() => mudarEscolhaRotina("habitos")}> Habitos </button>
-                <button className='btn-rotina' onClick={() => mudarEscolhaRotina("contas")}> Contas </button>
+                <button className='btn-rotina' id='btn-rotina-tarefas' onClick={() => mudarEscolhaRotina("tarefas")}> Tarefas </button>
+                <button className='btn-rotina' id='btn-rotina-diarias' onClick={() => mudarEscolhaRotina("diarias")}> Diarias </button>
+                <button className='btn-rotina' id='btn-rotina-habitos' onClick={() => mudarEscolhaRotina("habitos")}> Habitos </button>
+                <button className='btn-rotina' id='btn-rotina-contas' onClick={() => mudarEscolhaRotina("contas")}> Contas </button>
             </div>
             {estadoRotina()}
         </div>

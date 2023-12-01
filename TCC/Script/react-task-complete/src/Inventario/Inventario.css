@@ -14,7 +14,7 @@
     align-items: center;
     flex-wrap: wrap;
 
-    background: #6eddff;
+    background: #005A75;
     width: 600px;
     height: 550px;
     margin: 20px;
@@ -27,6 +27,7 @@
 .titulo-itens-adquiridos {
     font-size: 30px;
     font-weight: bolder;
+    color: #fff;
 }
 
 .item-inventario {
@@ -85,8 +86,8 @@
     box-sizing: border-box;
     padding: 10px 15px;
     font-size: 30px;
-    background-color: #FF8C00;
-    border: 1px solid #FF8C00;
+    background-color: #c56c00;
+    border: 1px solid #c56c00;
     border-radius: 20px;
     cursor: pointer;
     color: white;
@@ -98,5 +99,5 @@
 
 .aplicar-mudancas:hover {
     background-color: white;
-    color: #FF8C00;
+    color: #c56c00;
 }

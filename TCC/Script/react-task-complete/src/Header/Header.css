@@ -1,6 +1,7 @@
 :root{
     --color-white: #fff;
     --color-white1: #ECDCDC;
+    --color-dark0: #000;
     --color-dark1: rgb(39, 39, 38);
     --color-dark2: #2d2d2d;
     --color-dark3: #414141;
@@ -8,7 +9,7 @@
     --color-dark5: #343434;
     --color-dark6: #1111;
     --color-purple: #ffffff;
-    --color-blue: #6bcafd;
+    --color-blue: #005A75;
     --color-yellow: #ffee00;
 } 
 .header_body{
@@ -16,16 +17,14 @@
     font-family: Arial, Helvetica, sans-serif;
     color: var(--color-white);
 }
-.header, .navigation_header{
+.header, .navigation_header {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.header{
-    /* background-color: var(--color-dark2); */
+.header {
     background-color: var(--color-blue);
-    /* background-color: var(--color-yellow); */
     justify-content: space-between;
     padding: 0 10%;
     height: 5.5em;
@@ -38,9 +37,10 @@
     z-index: 2;
 }
 
-.link-header:hover {
+.link-header:hover, .dark-mode:hover, .fonte-maior:hover {
     background-color: rgb(75, 75, 75);
-    border-radius: 10px;
+    border-radius: 5px;
+    border: 2px solid #fff ;
 }
 
 .content{
@@ -133,6 +133,20 @@
     font-weight: bolder;
     height: 55px;
     width: 100px;
+    cursor: pointer;
+}
+
+.dark-mode {
+    font-weight: bolder;
+    height: 65px;
+    width: 75px;
+    cursor: pointer;
+}
+
+.fonte-maior {
+    font-weight: bolder;
+    height: 65px;
+    width: 65px;
     cursor: pointer;
 }
 

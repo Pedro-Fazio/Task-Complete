@@ -23,7 +23,7 @@ const AddTask = ({ onAdd }) => {
   return (
     <form className='add-form' onSubmit={onSubmit}>
       <div className='form-control'>
-        <label> Nome da Tarefa </label>
+        <label style={{ fontWeight: 'bold' }} > Nome da Tarefa </label>
         <input
           type='text'
           placeholder='Nome da Tarefa'
@@ -32,10 +32,10 @@ const AddTask = ({ onAdd }) => {
         />
       </div>
       <div className='form-control'>
-        <label> Dia | Hora </label>
+        <label style={{ fontWeight: 'bold' }} > Data </label>
         <input
           type='text'
-          placeholder='Dia | Hora'
+          placeholder='Data'
           value={dia}
           onChange={(e) => setDay(e.target.value)}
         />
