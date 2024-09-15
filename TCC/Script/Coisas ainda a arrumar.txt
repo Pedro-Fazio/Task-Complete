@@ -1,5 +1,0 @@
-Toda vez que cumpre alguma tarefa, conta, habito ou diaria, a pagina atualiza e volta pra tarefas, seria legal se voltasse para a aba que a pessoa esta (habito, tarefa, diaria ou conta) e não somente na tarefa toda a vez
-
-
-
-Quando clico numa tarefa, ele tira o "importante", q é o reminder no código, e dai quando eu clico de volta ele nao volta
