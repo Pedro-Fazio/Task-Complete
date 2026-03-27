@@ -3,7 +3,7 @@
 ## 📖 Overview
 **Task-Complete** is a Full-Stack web application (React.js + Spring Boot) designed to gamify daily routine management. Originally developed as a Bachelor's Thesis (TCC) at the University of São Paulo (USP), this project serves a critical social and technical purpose: to assist individuals with intellectual and cognitive challenges in organizing their daily activities.
 
-By transforming mundane real-world tasks into an engaging interactive experience, the platform bridges the gap between productivity tools and accessible entertainment. Transform daily tasks into motivational elements, engaging users through a virtual reward system. The project combines technology, behavioral psychology (Gamification), and accessibility guidelines to create an inclusive virtual environment.
+By transforming mundane real-world tasks into an engaging interactive experience, the platform bridges the gap between productivity tools and accessible entertainment. It transforms daily tasks into motivational elements, engaging users through a virtual reward system. The project combines technology, behavioral psychology (Gamification), and accessibility guidelines to create an inclusive virtual environment.
 
 ---
 
@@ -56,7 +56,6 @@ Completing tasks across any of the four modules dispatches state updates that re
 * **Framework:** Java / Spring Boot
 * **Architecture:** RESTful API
 * **Data Handling:** JSON serialization and dedicated REST endpoints.
-* **Persistence:** Relational database integration to store user profiles, task states, and inventory progress.
 
 ### Database (Data Persistence)
 * **Engine:** PostgreSQL
@@ -109,6 +108,11 @@ Completing tasks across any of the four modules dispatches state updates that re
 2. Install the dependencies:
    ```bash
    npm install
+   ```
+2. Start the development server:
+   ```bash
+   npm start
+   ```
 
 ## 🎓 Authorship
 
